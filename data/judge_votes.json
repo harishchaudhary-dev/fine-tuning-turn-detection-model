@@ -1,0 +1,542 @@
+{
+ "I4": {
+  "claude": "unsure",
+  "gemini": "unsure",
+  "gpt": "unsure",
+  "fresh": false
+ },
+ "E2": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "H5": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "A1": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "dA3": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": true
+ },
+ "J2": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "H6": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "G1": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "F2": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "J5": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "K6": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "I7": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "A2": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "dH3": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": true
+ },
+ "I3": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "dC1": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": true
+ },
+ "C3": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "dF1": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": true
+ },
+ "E1": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "dK3": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": true
+ },
+ "dI3": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": true
+ },
+ "dB1": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": true
+ },
+ "G2": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "F3": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "B2": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "K1": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "K7": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "J4": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "dH1": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": true
+ },
+ "dD1": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": true
+ },
+ "K5": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "H2": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "F1": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "dI2": {
+  "claude": "speak",
+  "gemini": "wait",
+  "gpt": "speak",
+  "fresh": true
+ },
+ "H4": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "D2": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "A4": {
+  "claude": "unsure",
+  "gemini": "unsure",
+  "gpt": "unsure",
+  "fresh": false
+ },
+ "J1": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "dB2": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": true
+ },
+ "J6": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "dE2": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": true
+ },
+ "F4": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "dG2": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": true
+ },
+ "I5": {
+  "claude": "unsure",
+  "gemini": "unsure",
+  "gpt": "unsure",
+  "fresh": false
+ },
+ "J8": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "I2": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "dA1": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": true
+ },
+ "dH2": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": true
+ },
+ "I8": {
+  "claude": "unsure",
+  "gemini": "unsure",
+  "gpt": "unsure",
+  "fresh": false
+ },
+ "K8": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "dK4": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": true
+ },
+ "I1": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "dJ1": {
+  "claude": "speak",
+  "gemini": "wait",
+  "gpt": "speak",
+  "fresh": true
+ },
+ "H7": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "dI4": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": true
+ },
+ "G3": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "E3": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "dK2": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": true
+ },
+ "dE1": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": true
+ },
+ "H8": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "A3": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "D3": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "dK1": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": true
+ },
+ "dJ3": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": true
+ },
+ "dD2": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": true
+ },
+ "dH4": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": true
+ },
+ "H1": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "D4": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "dF2": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": true
+ },
+ "K3": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "dJ2": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": true
+ },
+ "H3": {
+  "claude": "unsure",
+  "gemini": "unsure",
+  "gpt": "unsure",
+  "fresh": false
+ },
+ "C1": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "K2": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "K4": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "C4": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "B1": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "G4": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "dI1": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": true
+ },
+ "B4": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "dA2": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": true
+ },
+ "J3": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "D1": {
+  "claude": "unsure",
+  "gemini": "unsure",
+  "gpt": "unsure",
+  "fresh": false
+ },
+ "dG1": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": true
+ },
+ "C2": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "B3": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ },
+ "dC2": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": true
+ },
+ "J7": {
+  "claude": "unsure",
+  "gemini": "unsure",
+  "gpt": "unsure",
+  "fresh": false
+ },
+ "E4": {
+  "claude": "wait",
+  "gemini": "wait",
+  "gpt": "wait",
+  "fresh": false
+ },
+ "I6": {
+  "claude": "speak",
+  "gemini": "speak",
+  "gpt": "speak",
+  "fresh": false
+ }
+}

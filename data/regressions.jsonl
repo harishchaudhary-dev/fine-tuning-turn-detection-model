@@ -1,0 +1,6 @@
+{"context": "Agent: Anything else to help you with?", "text": "nah bye", "label": "speak", "cls": "C", "source": "live probe 2026-08-24, scored 0.34 and held the turn; casual-register gap"}
+{"context": "", "text": "nah bye", "label": "speak", "cls": "C", "source": "live probe 2026-08-24, bare variant"}
+{"context": "Agent: Anything else I can help with?", "text": "nope we're good", "label": "speak", "cls": "C", "source": "casual closer, same register gap"}
+{"context": "Agent: I will email you the updated BOL.", "text": "yep", "label": "speak", "cls": "C", "source": "one-word casual ack, same register gap"}
+{"context": "Agent: I will send the rate con now.", "text": "k thanks", "label": "speak", "cls": "C", "source": "texting-style ack, same register gap"}
+{"context": "", "text": "that's it bye", "label": "speak", "cls": "C", "source": "casual close without context, same register gap"}

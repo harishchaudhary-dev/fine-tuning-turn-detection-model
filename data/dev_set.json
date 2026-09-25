@@ -1,0 +1,378 @@
+{
+ "version": 1,
+ "created": "2026-08-25",
+ "purpose": "operating-threshold selection and calibration; disjoint from the frozen gold set",
+ "method": "three-judge panel, majority of three; ties and scatter fall to unsure",
+ "judges": [
+  "claude-sonnet-fresh-context",
+  "gemini-3-flash-preview",
+  "gpt-5.4-high-effort"
+ ],
+ "certification": {
+  "gold_hard_agreement": "53/53 for all three judges",
+  "caveat": "partially open-book: POLICY.md names the seven boundary card ids and quotes several rulings with answers, so certification demonstrates faithful application of the written policy rather than independent reproduction of the human labeler; scores on the unleaked majority of cards remain legitimate rule application"
+ },
+ "cost_ratio": 5,
+ "samples": [
+  {
+   "id": "dB1",
+   "cls": "B",
+   "context": "",
+   "text": "Which entrance do I use for the overnight parking?",
+   "label": "speak",
+   "votes": {
+    "claude": "speak",
+    "gemini": "speak",
+    "gpt": "speak"
+   }
+  },
+  {
+   "id": "dH1",
+   "cls": "H",
+   "context": "Agent: Did the receiver take all six pallets?",
+   "text": "They took everything.",
+   "label": "speak",
+   "votes": {
+    "claude": "speak",
+    "gemini": "speak",
+    "gpt": "speak"
+   }
+  },
+  {
+   "id": "dK1",
+   "cls": "K",
+   "context": "",
+   "text": "Let me dig out my logbook real fast...",
+   "label": "wait",
+   "votes": {
+    "claude": "wait",
+    "gemini": "wait",
+    "gpt": "wait"
+   }
+  },
+  {
+   "id": "dA1",
+   "cls": "A",
+   "context": "",
+   "text": "My truck's getting serviced so I'm taking tomorrow off.",
+   "label": "speak",
+   "votes": {
+    "claude": "speak",
+    "gemini": "speak",
+    "gpt": "speak"
+   }
+  },
+  {
+   "id": "dI1",
+   "cls": "I",
+   "context": "",
+   "text": "The guard said I could park overnight, supposedly...",
+   "label": "speak",
+   "votes": {
+    "claude": "speak",
+    "gemini": "speak",
+    "gpt": "speak"
+   }
+  },
+  {
+   "id": "dJ1",
+   "cls": "J",
+   "context": "",
+   "text": "Route me through- hold on, there's a detour sign...",
+   "label": "speak",
+   "votes": {
+    "claude": "speak",
+    "gemini": "wait",
+    "gpt": "speak"
+   }
+  },
+  {
+   "id": "dC1",
+   "cls": "C",
+   "context": "Agent: I moved your pickup to Friday.",
+   "text": "Works for me.",
+   "label": "speak",
+   "votes": {
+    "claude": "speak",
+    "gemini": "speak",
+    "gpt": "speak"
+   }
+  },
+  {
+   "id": "dF1",
+   "cls": "F",
+   "context": "Agent: Go ahead with the reefer serial.",
+   "text": "Serial is nine, four, four...",
+   "label": "wait",
+   "votes": {
+    "claude": "wait",
+    "gemini": "wait",
+    "gpt": "wait"
+   }
+  },
+  {
+   "id": "dG1",
+   "cls": "G",
+   "context": "",
+   "text": "I could swing by the yard tonight, unless...",
+   "label": "wait",
+   "votes": {
+    "claude": "wait",
+    "gemini": "wait",
+    "gpt": "wait"
+   }
+  },
+  {
+   "id": "dE1",
+   "cls": "E",
+   "context": "",
+   "text": "So the deal with the trailer is, um, like...",
+   "label": "wait",
+   "votes": {
+    "claude": "wait",
+    "gemini": "wait",
+    "gpt": "wait"
+   }
+  },
+  {
+   "id": "dH2",
+   "cls": "H",
+   "context": "Agent: How's the road looking?",
+   "text": "Clear all the way through.",
+   "label": "speak",
+   "votes": {
+    "claude": "speak",
+    "gemini": "speak",
+    "gpt": "speak"
+   }
+  },
+  {
+   "id": "dI3",
+   "cls": "I",
+   "context": "",
+   "text": "The appointment got pushed to two, or whatever...",
+   "label": "wait",
+   "votes": {
+    "claude": "wait",
+    "gemini": "wait",
+    "gpt": "wait"
+   }
+  },
+  {
+   "id": "dK2",
+   "cls": "K",
+   "context": "",
+   "text": "Hang on, the safety guy needs me for a sec...",
+   "label": "speak",
+   "votes": {
+    "claude": "speak",
+    "gemini": "speak",
+    "gpt": "speak"
+   }
+  },
+  {
+   "id": "dD1",
+   "cls": "D",
+   "context": "",
+   "text": "I would've been there sooner but the chains requirement on the pass...",
+   "label": "wait",
+   "votes": {
+    "claude": "wait",
+    "gemini": "wait",
+    "gpt": "wait"
+   }
+  },
+  {
+   "id": "dA2",
+   "cls": "A",
+   "context": "Agent: Morning, dispatch.",
+   "text": "Morning. The Reno drop went through clean and I'm heading back empty.",
+   "label": "speak",
+   "votes": {
+    "claude": "speak",
+    "gemini": "speak",
+    "gpt": "speak"
+   }
+  },
+  {
+   "id": "dJ2",
+   "cls": "J",
+   "context": "",
+   "text": "The customer wants- eh, forget it, not important.",
+   "label": "speak",
+   "votes": {
+    "claude": "speak",
+    "gemini": "speak",
+    "gpt": "speak"
+   }
+  },
+  {
+   "id": "dB2",
+   "cls": "B",
+   "context": "",
+   "text": "Is the scale house open past midnight?",
+   "label": "speak",
+   "votes": {
+    "claude": "speak",
+    "gemini": "speak",
+    "gpt": "speak"
+   }
+  },
+  {
+   "id": "dI2",
+   "cls": "I",
+   "context": "",
+   "text": "We're squared away on the invoice, I believe...",
+   "label": "speak",
+   "votes": {
+    "claude": "speak",
+    "gemini": "wait",
+    "gpt": "speak"
+   }
+  },
+  {
+   "id": "dH3",
+   "cls": "H",
+   "context": "",
+   "text": "I signed the paperwork already.",
+   "label": "speak",
+   "votes": {
+    "claude": "speak",
+    "gemini": "speak",
+    "gpt": "speak"
+   }
+  },
+  {
+   "id": "dF2",
+   "cls": "F",
+   "context": "Agent: What's the seal number?",
+   "text": "Seal reads seven seven one...",
+   "label": "wait",
+   "votes": {
+    "claude": "wait",
+    "gemini": "wait",
+    "gpt": "wait"
+   }
+  },
+  {
+   "id": "dK3",
+   "cls": "K",
+   "context": "",
+   "text": "One moment, I'm punching it into the GPS...",
+   "label": "wait",
+   "votes": {
+    "claude": "wait",
+    "gemini": "wait",
+    "gpt": "wait"
+   }
+  },
+  {
+   "id": "dE2",
+   "cls": "E",
+   "context": "",
+   "text": "Right, so, uh, where was I, um...",
+   "label": "wait",
+   "votes": {
+    "claude": "wait",
+    "gemini": "wait",
+    "gpt": "wait"
+   }
+  },
+  {
+   "id": "dG2",
+   "cls": "G",
+   "context": "",
+   "text": "The rate's fine I suppose, though...",
+   "label": "wait",
+   "votes": {
+    "claude": "wait",
+    "gemini": "wait",
+    "gpt": "wait"
+   }
+  },
+  {
+   "id": "dC2",
+   "cls": "C",
+   "context": "Agent: The gate code is four four nine one.",
+   "text": "Got it, thanks.",
+   "label": "speak",
+   "votes": {
+    "claude": "speak",
+    "gemini": "speak",
+    "gpt": "speak"
+   }
+  },
+  {
+   "id": "dI4",
+   "cls": "I",
+   "context": "",
+   "text": "I can probably make the morning slot, maybe...",
+   "label": "speak",
+   "votes": {
+    "claude": "speak",
+    "gemini": "speak",
+    "gpt": "speak"
+   }
+  },
+  {
+   "id": "dJ3",
+   "cls": "J",
+   "context": "",
+   "text": "Put me down for- hmm, wait a second...",
+   "label": "wait",
+   "votes": {
+    "claude": "wait",
+    "gemini": "wait",
+    "gpt": "wait"
+   }
+  },
+  {
+   "id": "dH4",
+   "cls": "H",
+   "context": "Agent: Anything else before I let you go?",
+   "text": "Actually, hold that thought.",
+   "label": "wait",
+   "votes": {
+    "claude": "wait",
+    "gemini": "wait",
+    "gpt": "wait"
+   }
+  },
+  {
+   "id": "dD2",
+   "cls": "D",
+   "context": "",
+   "text": "Before you book that, can you check if the...",
+   "label": "wait",
+   "votes": {
+    "claude": "wait",
+    "gemini": "wait",
+    "gpt": "wait"
+   }
+  },
+  {
+   "id": "dK4",
+   "cls": "K",
+   "context": "",
+   "text": "Hold on, my kid's calling on the other line...",
+   "label": "speak",
+   "votes": {
+    "claude": "speak",
+    "gemini": "speak",
+    "gpt": "speak"
+   }
+  },
+  {
+   "id": "dA3",
+   "cls": "A",
+   "context": "",
+   "text": "That detention check from last week finally cleared.",
+   "label": "speak",
+   "votes": {
+    "claude": "speak",
+    "gemini": "speak",
+    "gpt": "speak"
+   }
+  }
+ ]
+}

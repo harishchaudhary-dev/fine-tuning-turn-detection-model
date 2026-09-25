@@ -1,0 +1,968 @@
+{"context": "", "text": "sure. sure thing. that works for me", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "all right, hm, i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "the w- weight is all set", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: What is your MC?", "text": "oh okay. um. let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: The dock closes at eight am today.", "text": "uh, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: What is your MC?", "text": "got it, er, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "okay, and the other load is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: What is your current location?", "text": "yep, that works for me.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: Dispatch, how can I help?", "text": "like, uh, that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: The dock closes at eight am today.", "text": "yeah. uh. that works for me.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "okay. no problem. send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "do i, do i is the rate con?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "oh okay. hm. send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "what is b- broker", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg611504699"}
+{"context": "Agent: The dock closes at eight am today.", "text": "can you check the d- delivery", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: Anything else I can help with?", "text": "what is r- rate", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg611504699"}
+{"context": "Agent: What number can I reach you at?", "text": "well, hm,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "Agent: The dock closes at eight am today.", "text": "okay. sure thing. send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "right, i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "all right. um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "", "text": "er, sorry, one second, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2789786212"}
+{"context": "", "text": "oh okay, er, that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "oh okay, um, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "the p- pickup is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg599550250"}
+{"context": "", "text": "oh okay. that's funny. hm, can you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "Agent: Best callback number?", "text": "what is w- weight", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg611504699"}
+{"context": "", "text": "sure. sounds right. let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "um, let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "", "text": "uh, sorry, one second, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2789786212"}
+{"context": "", "text": "sure, uh", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "all right, uh...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "sure. uh. sounds right, that works for me.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "", "text": "yeah, uh...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "sure. er. that's funny, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: The dock closes at eight am today.", "text": "yeah, hold on, what is the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "er, let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "", "text": "yep. hm. let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "why, why the lumper fee, do you have?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "got it, er...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Where are you now?", "text": "all right, um", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Best callback number?", "text": "yeah. er. no problem, that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "", "text": "all right. um. i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "i mean, um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "Agent: Where are you now?", "text": "all right, um...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Your check call is set for noon.", "text": "what is p- pickup", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg611504699"}
+{"context": "", "text": "right. uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "Agent: Is there anything else?", "text": "how, how the gate code, is that covered", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "", "text": "okay, uh, that works for me", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: What is your MC?", "text": "yep, i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "got it. hm. let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: Is there anything else?", "text": "mm hm, er", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Is there anything else?", "text": "is it, is it the appointment, is that covered?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "", "text": "all right. uh. send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "hm, send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: Can I get your MC number?", "text": "okay. uh, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "got it, er", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: The dock closes at eight am today.", "text": "actually, um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "all right. uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "", "text": "got it. er, can you also check", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "Agent: What is your MC?", "text": "all right. uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "", "text": "okay. okay. sounds right. but the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "Agent: I will email you the updated BOL.", "text": "uh, sorry, one second, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2789786212"}
+{"context": "Agent: Is there anything else?", "text": "can you, can you the rate con", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3598302131"}
+{"context": "", "text": "mm hm, i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "how, how the trailer number", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3598302131"}
+{"context": "Agent: What is your current location?", "text": "the t- trailer is all set", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg491341036"}
+{"context": "", "text": "oh okay. hm. go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "sure. sure thing. er, do you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "Agent: Dispatch, how can I help?", "text": "oh, before i forget, one more question", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4124825803"}
+{"context": "", "text": "but, um, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: What is your current location?", "text": "sure. i see. i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "", "text": "okay, uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1544752322"}
+{"context": "", "text": "okay. hm. no problem, i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: Where are you now?", "text": "yeah. no problem. so the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "Agent: The dock closes at eight am today.", "text": "oh, before i forget, one more question", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4124825803"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "the w- weight is all set", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: The dock closes at eight am today.", "text": "actually, hold that thought.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1266654384"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "um, sorry, one second, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2789786212"}
+{"context": "", "text": "oh okay, hm, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "how, how, how is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg665828576"}
+{"context": "", "text": "okay. um. that works for me.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: The dock closes at eight am today.", "text": "oh, before i forget, one more question.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4124825803"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "um, that works for me.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "", "text": "got it. that's fine. that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: I will email you the updated BOL.", "text": "um, actually, hold that thought.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: The dock closes at eight am today.", "text": "oh okay, hm, send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Where are you now?", "text": "right, uh, let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "yeah, that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "uh, let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "", "text": "yeah. i see. let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Where are you now?", "text": "hm, i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: Best callback number?", "text": "is it, is it the dock number", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3598302131"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "and then, and then is the gate code?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "Agent: Can I get your MC number?", "text": "sure. understood. i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "got it, let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "yep. hm. let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "okay, uh...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "sure. sure. that's funny. what is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "", "text": "mm hm, er, that works for me", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "yeah, i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: What number can I reach you at?", "text": "so, um, let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "yeah, and the other load is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "p-pickup me at,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1342294746"}
+{"context": "", "text": "why, why the lumper fee", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3598302131"}
+{"context": "", "text": "yep, um", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: What is your current location?", "text": "mm hm, that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "okay. that's funny. go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Your check call is set for noon.", "text": "sure. sounds right. uh, would it", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "", "text": "and then, and then the gate code, do you have?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "do i, do i the lumper fee, who do i call about?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "", "text": "all right. um. i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: What number can I reach you at?", "text": "er, sorry, one second, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2789786212"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "mm hm. uh. no problem, that works for me", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "when, when the dock number, is that covered?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Dispatch, how can I help?", "text": "how, how", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3999730671"}
+{"context": "", "text": "who, who is the gate code", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "is it, is it", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3999730671"}
+{"context": "", "text": "oh okay, er...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: The dock closes at eight am today.", "text": "do i, do i the rate con, do you have?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: What is your MC?", "text": "got it, er, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Is there anything else?", "text": "mm hm, er...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "the r- rate is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg599550250"}
+{"context": "", "text": "okay, um, that's all i needed", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "oh okay. hm. that's funny, that's all i needed", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "hm, actually, hold that thought", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2838112348"}
+{"context": "", "text": "do i, do i the load number, do you have", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "", "text": "got it. er, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "", "text": "oh okay, uh", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Dispatch, how can I help?", "text": "can you check the l- lumper?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4000463441"}
+{"context": "", "text": "um, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "", "text": "er, that's all i needed", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: What is your MC?", "text": "do i, do i the rate con, is that covered?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "is there", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1960132945"}
+{"context": "", "text": "sure. sure. sounds right. and the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "", "text": "got it. um, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "er, sorry, one second, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2789786212"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "okay. sure thing. uh, would it", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "Agent: Is there anything else?", "text": "i mean, uh, i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "got it. sounds right. i don't", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "Agent: Where are you now?", "text": "is it, is it, is it is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg665828576"}
+{"context": "", "text": "oh okay. er. let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "mm hm, er, that works for me.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "can you check the p- pickup", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4000463441"}
+{"context": "", "text": "right, um, i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "all right, wait, does that mean the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "do i, do i is the load number", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "i mean, er, i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: Your check call is set for noon.", "text": "can you check the t- trailer", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4000463441"}
+{"context": "", "text": "okay. um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "and then, and then, and then is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg665828576"}
+{"context": "Agent: What number can I reach you at?", "text": "wait, hold on, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg939557621"}
+{"context": "", "text": "um, that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "can you check the d- delivery?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4000463441"}
+{"context": "", "text": "um, let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: Where are you now?", "text": "oh, before i forget, one more question", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4124825803"}
+{"context": "Agent: Your check call is set for noon.", "text": "okay, wait, does that mean the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: What number can I reach you at?", "text": "sure. sounds right. is there", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "Agent: Dispatch, how can I help?", "text": "okay, uh", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: The dock closes at eight am today.", "text": "yeah. um. i got it, i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: What number can I reach you at?", "text": "mm hm. er,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "", "text": "yep. makes sense. uh, do you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "", "text": "i mean, um, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: Can I get your MC number?", "text": "right. uh. that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "yeah. er, can you also check", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "", "text": "the d- delivery is all set.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg491341036"}
+{"context": "", "text": "got it. hm, and the other load is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "Agent: Your check call is set for noon.", "text": "and then, and then", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3999730671"}
+{"context": "", "text": "er, that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: Your check call is set for noon.", "text": "all right, um...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Is there anything else?", "text": "um, actually, hold that thought.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: I will email you the updated BOL.", "text": "yep, um, that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Your check call is set for noon.", "text": "all right, um, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: What is your MC?", "text": "yep, i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "and then, and then the gate code", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3598302131"}
+{"context": "", "text": "um, let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "", "text": "but, er, let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "yeah, uh", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Is there anything else?", "text": "is it, is it the appointment, is that covered", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: What is your MC?", "text": "yep. um, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: The dock closes at eight am today.", "text": "mm hm. er. i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "got it, hm...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: What is your current location?", "text": "sure. sure. sure thing. would it", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "wait, hold on, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg939557621"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "how, how the rate con, can you send", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Best callback number?", "text": "do i, do i", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3999730671"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "um, sorry, one second, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2789786212"}
+{"context": "Agent: What is your MC?", "text": "sure. that's funny. i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "", "text": "right, um, i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "what is t- trailer", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg611504699"}
+{"context": "Agent: Can I get your MC number?", "text": "wait, hold on, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg939557621"}
+{"context": "", "text": "can you check the d- delivery", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: Where are you now?", "text": "sure. sounds right. uh, can you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "", "text": "yep. uh, let me ask about the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "Agent: Can I get your MC number?", "text": "can you check the r- rate?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: What number can I reach you at?", "text": "when, when is the dock number", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "all right, er,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1544752322"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "right, i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: The dock closes at eight am today.", "text": "all right. er, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: What number can I reach you at?", "text": "all right. um. i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: What is your current location?", "text": "uh, actually, hold that thought.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "the t- trailer is all set.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "actually, er, that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "what is p- pickup", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg611504699"}
+{"context": "Agent: Where are you now?", "text": "when, when the delivery window, can you send", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Dispatch, how can I help?", "text": "like, uh, that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "sure. er. i see, let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "", "text": "all right. hm,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "", "text": "got it. um, then just call me", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "", "text": "okay. um. that works for me", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "wait, hold on, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg939557621"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "like, er,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "", "text": "okay. uh. sure thing, that works for me", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "", "text": "um, actually, hold that thought.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2838112348"}
+{"context": "", "text": "okay, um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1544752322"}
+{"context": "Agent: Can I get your MC number?", "text": "can you, can you, can you is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg665828576"}
+{"context": "", "text": "hm, actually, hold that thought", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: Best callback number?", "text": "yeah. i got it. i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: What number can I reach you at?", "text": "all right, uh...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: I will email you the updated BOL.", "text": "er, sorry, one second, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2789786212"}
+{"context": "Agent: I will email you the updated BOL.", "text": "so, uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "er, sorry, one second, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2789786212"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "the p- pickup is all set", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: Dispatch, how can I help?", "text": "got it. hm, let me ask about the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "", "text": "right, uh", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Anything else I can help with?", "text": "but the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1960132945"}
+{"context": "Agent: Anything else I can help with?", "text": "i mean, um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "how, how is the trailer number", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "sure. sure thing. that works for me.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "", "text": "do i, do i is the rate con?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "Agent: Best callback number?", "text": "yeah. er. no problem, that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: Dispatch, how can I help?", "text": "w-weight me at,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1342294746"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "what is b- broker", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg611504699"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "all right. er, the other thing is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "wait, hold on, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg939557621"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "all right. uh. go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "sure, um...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "hm, sorry, one second, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2789786212"}
+{"context": "Agent: Your check call is set for noon.", "text": "um, i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "er, let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "", "text": "actually, uh, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "mm hm, that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "oh okay, er, that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: What number can I reach you at?", "text": "all right, um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1544752322"}
+{"context": "", "text": "oh okay, er", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Can I get your MC number?", "text": "okay, um...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "got it. hm, can you also check", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "", "text": "when, when", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3999730671"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "yeah. uh, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "", "text": "actually, uh, that works for me", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "all right. um, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "", "text": "yep. uh. makes sense, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "", "text": "hm, actually, hold that thought.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2838112348"}
+{"context": "", "text": "can you check the r- rate", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: Your check call is set for noon.", "text": "all right, um, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "actually, hold that thought", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1266654384"}
+{"context": "", "text": "yep. yep. makes sense. can you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "", "text": "right, one thing though", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "um, i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "", "text": "the p- pickup is all set", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "so, um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "i mean, er,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "Agent: What is your MC?", "text": "b-broker me at,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1342294746"}
+{"context": "Agent: What is your current location?", "text": "all right, i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: I will email you the updated BOL.", "text": "sure. um. go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: Best callback number?", "text": "okay, uh, send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "er, sorry, one second, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2789786212"}
+{"context": "Agent: What number can I reach you at?", "text": "the b- broker is all set.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg491341036"}
+{"context": "", "text": "all right, um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1544752322"}
+{"context": "", "text": "yep. um. go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "er, actually, hold that thought", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: The dock closes at eight am today.", "text": "got it, what about the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "", "text": "right. right. understood. so the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "Agent: The dock closes at eight am today.", "text": "can you check the d- delivery?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "okay. no problem. send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "", "text": "sure. er. that works for me.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "got it. er. go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "can you check the p- pickup?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: What is your current location?", "text": "mm hm. no problem. do you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "", "text": "sure. er, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "how, how the rate con, can you send?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "can you check the w- weight", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: The dock closes at eight am today.", "text": "mm hm. er. i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: What number can I reach you at?", "text": "got it. er. sounds right, that's all i needed.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: Is there anything else?", "text": "how, how the gate code, is that covered?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Dispatch, how can I help?", "text": "oh okay. oh okay. that's funny. about the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "Agent: Can I get your MC number?", "text": "okay. uh, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "", "text": "yeah. no problem. er, do you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "wait, hold on, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg939557621"}
+{"context": "", "text": "got it, uh", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "oh okay, hm, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Your check call is set for noon.", "text": "can you check the t- trailer?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4000463441"}
+{"context": "", "text": "but, um, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "um, actually, hold that thought", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: What is your MC?", "text": "yep. um, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "", "text": "yep. um. go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "yep, um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1544752322"}
+{"context": "", "text": "yep. hm, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "", "text": "right. hm, wait, does that mean the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "", "text": "got it, one thing though", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: Is there anything else?", "text": "right, um...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Best callback number?", "text": "mm hm, i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: What is your MC?", "text": "sure. hm. understood, that's all i needed", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: What is your MC?", "text": "but, um, send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: Can I get your MC number?", "text": "um, sorry, one second, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2789786212"}
+{"context": "", "text": "got it, uh...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "okay. no problem. so the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "Agent: What is your MC?", "text": "actually, hold that thought.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1266654384"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "got it, send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: Where are you now?", "text": "yeah, uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1544752322"}
+{"context": "", "text": "p-pickup me at,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1342294746"}
+{"context": "Agent: What is your current location?", "text": "why, why is the lumper fee?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "oh okay. hm. go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: Where are you now?", "text": "all right, uh, send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "right. uh, and the other load is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "Agent: What number can I reach you at?", "text": "got it. er. sounds right, that's all i needed", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: What number can I reach you at?", "text": "is it, is it the rate con, who do i call about?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: What is your MC?", "text": "oh, before i forget, one more question.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4124825803"}
+{"context": "", "text": "why, why", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3999730671"}
+{"context": "", "text": "uh, i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: The dock closes at eight am today.", "text": "w-weight me at,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1342294746"}
+{"context": "", "text": "yep, hm", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: I will email you the updated BOL.", "text": "yep. hm,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "Agent: What is your MC?", "text": "yeah. hm, one thing though", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "Agent: The dock closes at eight am today.", "text": "oh okay, hm, send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "right, uh...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "okay. that's funny. hm, so the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "Agent: I will email you the updated BOL.", "text": "actually, hold that thought.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1266654384"}
+{"context": "Agent: The dock closes at eight am today.", "text": "right, hold on, what is the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "", "text": "mm hm, that works for me.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "got it. sounds right. i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Dispatch, how can I help?", "text": "but, hm, that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "can you, can you the rate con, who do i call about?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Can I get your MC number?", "text": "how, how is the gate code?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "Agent: What is your current location?", "text": "the d- delivery is all set", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "right, hm,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1544752322"}
+{"context": "Agent: The dock closes at eight am today.", "text": "oh okay, let me ask about the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "got it. uh. i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "right. understood. uh, can you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "", "text": "mm hm, i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "hm, send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "sure, um, send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Can I get your MC number?", "text": "how, how is the gate code", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "Agent: Where are you now?", "text": "oh okay, um, that's all i needed.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "can you check the w- weight?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: Can I get your MC number?", "text": "can you check the d- delivery?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "the p- pickup is all set.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: Can I get your MC number?", "text": "wait, hold on, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg939557621"}
+{"context": "", "text": "b-broker me at,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1342294746"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "why, why, why is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg665828576"}
+{"context": "Agent: Dispatch, how can I help?", "text": "right. understood. i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Your check call is set for noon.", "text": "um, i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "oh, before i forget, one more question", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4124825803"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "er, i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "why, why is the lumper fee", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "when, when the rate con, is that covered", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "", "text": "but, er, let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: What number can I reach you at?", "text": "all right, uh", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "yep. uh, wait, does that mean the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "Agent: Anything else I can help with?", "text": "mm hm. um, wait, does that mean the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "", "text": "okay. that's funny. is there", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "Agent: What number can I reach you at?", "text": "right, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "actually, hold that thought.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1266654384"}
+{"context": "Agent: The dock closes at eight am today.", "text": "can you check the t- trailer?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: Best callback number?", "text": "how, how the trailer number, who do i call about?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: The dock closes at eight am today.", "text": "actually, hold that thought", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1266654384"}
+{"context": "Agent: Best callback number?", "text": "mm hm. er. send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: What is your current location?", "text": "oh okay, um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1544752322"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "can you check the d- delivery", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: What number can I reach you at?", "text": "er, sorry, one second, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2789786212"}
+{"context": "Agent: I will email you the updated BOL.", "text": "all right, um, let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "mm hm. hm, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: Can I get your MC number?", "text": "actually, hold that thought.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1266654384"}
+{"context": "", "text": "sure. sure thing. can you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "", "text": "yeah, i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "right. uh, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: Anything else I can help with?", "text": "and then, and then the trailer number, who do i call about?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: The dock closes at eight am today.", "text": "got it, hm, that's all i needed.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: What number can I reach you at?", "text": "so, um, let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: Where are you now?", "text": "when, when the delivery window, can you send?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: What number can I reach you at?", "text": "sure. understood. hm, so the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "", "text": "do i, do i, do i is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg665828576"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "oh okay. um. send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "okay. hm, wait, does that mean the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "got it, let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: What is your MC?", "text": "like, er, that works for me", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: Anything else I can help with?", "text": "hm, actually, hold that thought", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: Where are you now?", "text": "okay. sounds right. but the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "", "text": "got it. uh. that's fine, that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "do i, do i the lumper fee", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3598302131"}
+{"context": "", "text": "okay. uh. let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "yep, hm,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1544752322"}
+{"context": "", "text": "sure. er. that's funny, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: What number can I reach you at?", "text": "wait, hold on, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg939557621"}
+{"context": "", "text": "yeah. yeah. i got it. so the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "Agent: The dock closes at eight am today.", "text": "yeah. hm, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "", "text": "mm hm, what about the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "", "text": "got it. hm,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "Agent: Where are you now?", "text": "right, before that, is the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "mm hm, uh", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "yep. um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "Agent: Is there anything else?", "text": "is it, is it is the dock number?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "who, who the gate code, what time is?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: What is your current location?", "text": "sure, i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "i mean, uh, i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "do i, do i the rate con, is that covered", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "all right. hm. send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "do i, do i is the rate con?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "oh okay. um. send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "got it. er, and the other load is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "", "text": "the w- weight is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg599550250"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "wait, hold on, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg939557621"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "do i, do i is the rate con", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "Agent: I will email you the updated BOL.", "text": "yeah. uh. i see, let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "do i, do i is the load number?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "right, i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: Best callback number?", "text": "mm hm. er, wait, does that mean the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "", "text": "got it. sounds right. i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Your check call is set for noon.", "text": "yep, that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "um, sorry, one second, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2789786212"}
+{"context": "Agent: I will email you the updated BOL.", "text": "actually, hold that thought", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1266654384"}
+{"context": "Agent: Can I get your MC number?", "text": "the b- broker is all set.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg491341036"}
+{"context": "", "text": "actually, uh, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "oh okay. that's funny. i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "", "text": "when, when is the delivery window?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "is it, is it the dock number, is that covered", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Dispatch, how can I help?", "text": "right, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: Can I get your MC number?", "text": "oh okay. sure thing. er, would it", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "Agent: Dispatch, how can I help?", "text": "what is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1960132945"}
+{"context": "", "text": "oh okay, that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: What number can I reach you at?", "text": "got it, i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "all right. hm. send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: Can I get your MC number?", "text": "sure. understood. i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "", "text": "r-rate me at,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1342294746"}
+{"context": "", "text": "yep. hm, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: Where are you now?", "text": "d-delivery me at,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1342294746"}
+{"context": "", "text": "right. hm, and the other load is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "", "text": "oh okay. uh. i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "oh okay. uh. i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "mm hm, that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: The dock closes at eight am today.", "text": "got it, hm, that's all i needed", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "t-trailer me at,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1342294746"}
+{"context": "", "text": "yeah. yeah. i see. but the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "Agent: Dispatch, how can I help?", "text": "um, actually, hold that thought.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: What is your current location?", "text": "got it, er,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1544752322"}
+{"context": "", "text": "right. um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "", "text": "got it. got it. that's fine. would it", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "Agent: What number can I reach you at?", "text": "the b- broker is all set", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: Where are you now?", "text": "and then, and then is the trailer number?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "got it. er,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "the w- weight is all set.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg491341036"}
+{"context": "", "text": "do i, do i", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3999730671"}
+{"context": "Agent: What is your MC?", "text": "mm hm, hold on, what is the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: What is your MC?", "text": "when, when is the rate con?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "oh okay. er. sure thing, that's all i needed.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: Best callback number?", "text": "so the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1960132945"}
+{"context": "Agent: The dock closes at eight am today.", "text": "i mean, uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "Agent: Dispatch, how can I help?", "text": "right, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: What number can I reach you at?", "text": "is it, is it the rate con, who do i call about", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "mm hm, er, that's all i needed", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Is there anything else?", "text": "er, actually, hold that thought.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2838112348"}
+{"context": "", "text": "right. hm, can you also check", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "", "text": "er, that's all i needed.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "er, i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "", "text": "i mean, hm,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "Agent: Can I get your MC number?", "text": "actually, hold that thought", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1266654384"}
+{"context": "", "text": "oh okay. er. sure thing, that's all i needed", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "", "text": "oh, before i forget, one more question", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4124825803"}
+{"context": "", "text": "when, when, when is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg665828576"}
+{"context": "Agent: Where are you now?", "text": "got it, then just call me", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "do i, do i the lumper fee, who do i call about", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Dispatch, how can I help?", "text": "okay, uh...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "i mean, um, that's all i needed.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "okay. uh. send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: What is your MC?", "text": "what is p- pickup", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg611504699"}
+{"context": "Agent: What is your current location?", "text": "when, when the rate con", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3598302131"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "when, when the rate con, is that covered?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Anything else I can help with?", "text": "what is l- lumper", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg611504699"}
+{"context": "", "text": "the b- broker is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg599550250"}
+{"context": "", "text": "can you check the b- broker", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: Can I get your MC number?", "text": "okay. uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "Agent: Can I get your MC number?", "text": "mm hm. uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "Agent: I will email you the updated BOL.", "text": "sure. um. go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: What is your MC?", "text": "oh, before i forget, one more question", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4124825803"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "um, sorry, one second, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2789786212"}
+{"context": "", "text": "so the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1960132945"}
+{"context": "", "text": "can you check the w- weight?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4000463441"}
+{"context": "", "text": "got it, hold on, what is the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "", "text": "yep. uh, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "", "text": "all right, uh, i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "yep. makes sense. that works for me", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Where are you now?", "text": "can you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1960132945"}
+{"context": "", "text": "got it. that's fine. that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Is there anything else?", "text": "sure. er, hold on, what is the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "got it. er, let me ask about the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "", "text": "got it. got it. sounds right. would it", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "", "text": "got it. um, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "", "text": "when, when the dock number", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3598302131"}
+{"context": "Agent: What is your MC?", "text": "sure. hm. understood, that's all i needed.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "the p- pickup is all set", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg491341036"}
+{"context": "", "text": "mm hm, er, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "oh okay, um", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "actually, hm, that works for me", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "okay, uh, that works for me.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "all right, hm...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "do i, do i the rate con, is that covered?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: What is your current location?", "text": "oh okay. uh, let me ask about the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "sure. sure. sounds right. about the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "", "text": "all right, can you also check", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "", "text": "do i, do i the load number, do you have?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "yeah. no problem. i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "", "text": "okay. uh. sounds right, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "", "text": "sure. uh. that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "got it, then just call me", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "", "text": "yeah. i see. would it", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "", "text": "okay. that's funny. go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Can I get your MC number?", "text": "do i, do i, do i is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg665828576"}
+{"context": "Agent: Can I get your MC number?", "text": "the b- broker is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg599550250"}
+{"context": "Agent: Can I get your MC number?", "text": "right. uh. that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: The dock closes at eight am today.", "text": "yeah. um. i got it, i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: Is there anything else?", "text": "r-rate me at,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1342294746"}
+{"context": "", "text": "okay, um, that's all i needed.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "how, how", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3999730671"}
+{"context": "Agent: Anything else I can help with?", "text": "hm, actually, hold that thought.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2838112348"}
+{"context": "", "text": "and then, and then the trailer number", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3598302131"}
+{"context": "Agent: What is your current location?", "text": "mm hm. er. send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: Where are you now?", "text": "the d- delivery is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg599550250"}
+{"context": "", "text": "got it. that's fine. so the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "Agent: Is there anything else?", "text": "okay. uh. i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "got it, uh, that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Anything else I can help with?", "text": "and then, and then the trailer number, who do i call about", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Is there anything else?", "text": "like, er,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "", "text": "uh, sorry, one second, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2789786212"}
+{"context": "", "text": "all right, uh", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: What is your MC?", "text": "yeah. yeah. no problem. what is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "is it, is it is the appointment", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "Agent: Anything else I can help with?", "text": "sure. sure. understood. and the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "Agent: I will email you the updated BOL.", "text": "oh, before i forget, one more question.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4124825803"}
+{"context": "Agent: Anything else I can help with?", "text": "yep, let me ask about the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: Best callback number?", "text": "who, who, who is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg665828576"}
+{"context": "Agent: Your check call is set for noon.", "text": "sure. er,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "Agent: Is there anything else?", "text": "sure. sounds right. about the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "", "text": "right, i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "the d- delivery is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg599550250"}
+{"context": "Agent: I will email you the updated BOL.", "text": "got it. er, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: What is your current location?", "text": "is it, is it is the rate con?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "uh, sorry, one second, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2789786212"}
+{"context": "Agent: The dock closes at eight am today.", "text": "mm hm, er...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "do i, do i", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3999730671"}
+{"context": "", "text": "right. uh, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: Is there anything else?", "text": "okay. uh. i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: I will email you the updated BOL.", "text": "the w- weight is all set.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg491341036"}
+{"context": "", "text": "like, um, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: What is your current location?", "text": "mm hm. er. send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: What is your MC?", "text": "oh okay. um. let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "okay. uh. send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: The dock closes at eight am today.", "text": "all right. er, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "", "text": "oh okay. hm. send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: Anything else I can help with?", "text": "why, why the lumper fee, can you send?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: I will email you the updated BOL.", "text": "yeah. i see. uh, i don't", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "Agent: Best callback number?", "text": "okay, uh, send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "oh okay, uh, i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Dispatch, how can I help?", "text": "got it, and the other load is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: The dock closes at eight am today.", "text": "can you check the t- trailer", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "uh, sorry, one second, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2789786212"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "is there", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1960132945"}
+{"context": "", "text": "sure. uh. sounds right, let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: Your check call is set for noon.", "text": "um, sorry, one second, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2789786212"}
+{"context": "", "text": "the d- delivery is all set", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg491341036"}
+{"context": "", "text": "all right, hm", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "oh okay, hm...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "do i, do i is the rate con", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "sure. uh. sounds right, that works for me", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "", "text": "okay, i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "the l- lumper is all set.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: Where are you now?", "text": "the r- rate is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg599550250"}
+{"context": "Agent: Where are you now?", "text": "hm, i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: What number can I reach you at?", "text": "hm, actually, hold that thought", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: I will email you the updated BOL.", "text": "can you, can you is the rate con", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "Agent: What number can I reach you at?", "text": "all right. um. i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: What number can I reach you at?", "text": "mm hm, uh, let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "the p- pickup is all set.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "is it, is it is the appointment?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "the p- pickup is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg599550250"}
+{"context": "", "text": "actually, uh, that works for me.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "yep, send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: Your check call is set for noon.", "text": "yep, that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: Where are you now?", "text": "got it, that's all i needed", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "oh, before i forget, one more question.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4124825803"}
+{"context": "", "text": "sure. um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "", "text": "oh okay. er,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "", "text": "mm hm. hm, can you also check", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "", "text": "yep. makes sense. that works for me.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "", "text": "oh okay. um, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: Can I get your MC number?", "text": "okay, um", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Dispatch, how can I help?", "text": "right. understood. i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Where are you now?", "text": "um, sorry, one second, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2789786212"}
+{"context": "", "text": "can you check the w- weight", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: The dock closes at eight am today.", "text": "uh, sorry, one second, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2789786212"}
+{"context": "", "text": "oh okay, um...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: What number can I reach you at?", "text": "okay. uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "Agent: The dock closes at eight am today.", "text": "okay. hm. that's funny, let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "", "text": "er, actually, hold that thought.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "and then, and then is the gate code", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "Agent: Is there anything else?", "text": "right, um", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: The dock closes at eight am today.", "text": "mm hm, er", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Dispatch, how can I help?", "text": "but, hm, that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "er, that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "okay. sounds right. i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "er, sorry, one second, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2789786212"}
+{"context": "", "text": "okay. uh. sounds right, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: Is there anything else?", "text": "wait, hold on, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg939557621"}
+{"context": "", "text": "like, um, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "mm hm, er...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "yep, let me ask about the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: What number can I reach you at?", "text": "mm hm, uh, let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "what is d- delivery", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg611504699"}
+{"context": "", "text": "all right, let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: What is your current location?", "text": "yep, that works for me", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: Where are you now?", "text": "right, uh, let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: What is your current location?", "text": "why, why is the lumper fee", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "mm hm, er, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "can you, can you the rate con, who do i call about", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Your check call is set for noon.", "text": "uh, that's all i needed.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "", "text": "sure, uh...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "like, er,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "Agent: What is your current location?", "text": "sure, i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "mm hm, er", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "hm, actually, hold that thought.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: What is your current location?", "text": "uh, actually, hold that thought", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: Where are you now?", "text": "got it, that's all i needed.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: Can I get your MC number?", "text": "is it, is it the appointment", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3598302131"}
+{"context": "Agent: Dispatch, how can I help?", "text": "got it, hold on, what is the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: Where are you now?", "text": "and then, and then is the trailer number", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "well, er,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "um, that works for me", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "", "text": "the p- pickup is all set.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "how, how is the trailer number?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "hm, sorry, one second, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2789786212"}
+{"context": "", "text": "yeah, er,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1544752322"}
+{"context": "", "text": "can you check the r- rate?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4000463441"}
+{"context": "", "text": "wait, hold on, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg939557621"}
+{"context": "", "text": "and then, and then the gate code, do you have", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Is there anything else?", "text": "is it, is it is the dock number", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "how, how is the rate con?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "got it, before that, is the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: What is your MC?", "text": "actually, hold that thought", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1266654384"}
+{"context": "Agent: I will email you the updated BOL.", "text": "er, sorry, one second, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2789786212"}
+{"context": "", "text": "sure. that's funny. can you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "Agent: The dock closes at eight am today.", "text": "uh, sorry, one second, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2789786212"}
+{"context": "Agent: Is there anything else?", "text": "uh, sorry, one second, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2789786212"}
+{"context": "", "text": "sure. er, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "", "text": "got it, uh, that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "when, when the dock number, is that covered", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "", "text": "okay, i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "how, how is the rate con", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "Agent: The dock closes at eight am today.", "text": "wait, hold on, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg939557621"}
+{"context": "", "text": "um, i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: Dispatch, how can I help?", "text": "can you check the l- lumper", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: I will email you the updated BOL.", "text": "is it, is it the rate con", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3598302131"}
+{"context": "Agent: Your check call is set for noon.", "text": "all right, um", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "got it, i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "how, how", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3999730671"}
+{"context": "", "text": "um, i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "sure, um, send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "sure, uh, i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "actually, um, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "uh, let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "", "text": "oh okay. oh okay. sure thing. i don't", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "", "text": "what is r- rate", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg611504699"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "actually, er, that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: What is your current location?", "text": "oh okay. sure thing. can you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "Agent: What is your current location?", "text": "oh okay, hm", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Where are you now?", "text": "yeah, er,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1544752322"}
+{"context": "", "text": "what is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1960132945"}
+{"context": "", "text": "mm hm. no problem. uh, do you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "", "text": "do i, do i the rate con", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3598302131"}
+{"context": "", "text": "how, how the gate code", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3598302131"}
+{"context": "Agent: Is there anything else?", "text": "wait, hold on, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg939557621"}
+{"context": "Agent: The dock closes at eight am today.", "text": "the d- delivery is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg599550250"}
+{"context": "", "text": "oh okay. hm. that's funny, that's all i needed.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "", "text": "can you check the b- broker?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: Your check call is set for noon.", "text": "um, sorry, one second, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2789786212"}
+{"context": "", "text": "yep, hm, send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "oh okay, uh, i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "all right. um, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "yep. er, then just call me", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "Agent: What is your MC?", "text": "what is d- delivery", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg611504699"}
+{"context": "", "text": "okay. uh. let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "can you, can you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3999730671"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "why, why is the lumper fee?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "Agent: What is your current location?", "text": "the d- delivery is all set.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "actually, um, let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "the r- rate is all set", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: What is your MC?", "text": "so, er, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: Anything else I can help with?", "text": "why, why the lumper fee, can you send", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "yeah. er, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: Best callback number?", "text": "right, one thing though", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "", "text": "i mean, um, that's all i needed", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: Dispatch, how can I help?", "text": "okay. uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "", "text": "oh okay. um, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: What number can I reach you at?", "text": "hm, actually, hold that thought.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2838112348"}
+{"context": "", "text": "do i, do i is the rate con", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "Agent: The dock closes at eight am today.", "text": "okay. hm. that's funny, let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: I will email you the updated BOL.", "text": "can you check the p- pickup?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4000463441"}
+{"context": "", "text": "got it. uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "Agent: I will email you the updated BOL.", "text": "yep, let me ask about the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "", "text": "er, i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "", "text": "oh okay. hm,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "Agent: Anything else I can help with?", "text": "got it. sounds right. er, can you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "Agent: Best callback number?", "text": "yeah. i got it. i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: What is your current location?", "text": "sure, er, send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "okay, uh, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "why, why, why is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg665828576"}
+{"context": "", "text": "the b- broker is all set.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: Is there anything else?", "text": "p-pickup me at,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1342294746"}
+{"context": "Agent: What is your current location?", "text": "what is r- rate", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg611504699"}
+{"context": "Agent: What is your current location?", "text": "sure. understood. would it", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "Agent: Best callback number?", "text": "mm hm, i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "like, um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "can you check the b- broker", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: Anything else I can help with?", "text": "got it, let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: What number can I reach you at?", "text": "okay. sure thing. i don't", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "", "text": "uh, actually, hold that thought.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "um, let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: Where are you now?", "text": "oh okay. sure thing. that's all i needed", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "", "text": "okay. uh, can you also check", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "", "text": "all right, let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "er, i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "", "text": "the l- lumper is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg599550250"}
+{"context": "Agent: What is your current location?", "text": "is it, is it is the rate con", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "Agent: Dispatch, how can I help?", "text": "actually, um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "Agent: Your check call is set for noon.", "text": "uh, that's all i needed", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: What number can I reach you at?", "text": "okay, that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: What is your current location?", "text": "sure. i see. i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "", "text": "the l- lumper is all set", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: What is your current location?", "text": "all right, i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "got it. uh. that's fine, that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "", "text": "okay. uh. sure thing, that works for me.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "", "text": "oh okay. er. let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "can you check the p- pickup", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: Is there anything else?", "text": "i mean, uh, i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "mm hm. no problem. that works for me.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "sure, er", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "okay, uh", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "uh, i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "oh okay. hm,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "Agent: I will email you the updated BOL.", "text": "so, um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "Agent: Your check call is set for noon.", "text": "er, actually, hold that thought.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "yep. makes sense. but the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "", "text": "got it. er. go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: Where are you now?", "text": "oh okay, um, that's all i needed", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Anything else I can help with?", "text": "got it, let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: Your check call is set for noon.", "text": "oh, before i forget, one more question.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4124825803"}
+{"context": "Agent: Can I get your MC number?", "text": "okay. er, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "", "text": "sure. uh. that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "the r- rate is all set.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: I will email you the updated BOL.", "text": "who, who the gate code", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3598302131"}
+{"context": "", "text": "okay. okay. sure thing. is there", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "Agent: Is there anything else?", "text": "er, actually, hold that thought", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "but the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1960132945"}
+{"context": "Agent: The dock closes at eight am today.", "text": "do i, do i the rate con, do you have", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "yeah, that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "who, who is the gate code?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "Agent: What is your current location?", "text": "the t- trailer is all set.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg491341036"}
+{"context": "", "text": "how, how, how is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg665828576"}
+{"context": "Agent: I will email you the updated BOL.", "text": "yeah. uh. i see, let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "", "text": "all right. hm, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "", "text": "yep. uh, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: What number can I reach you at?", "text": "when, when is the dock number?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "mm hm. uh, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: Can I get your MC number?", "text": "can you check the d- delivery", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: What is your MC?", "text": "when, when is the rate con", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "do i, do i is the lumper fee?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "and the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1960132945"}
+{"context": "", "text": "right, i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "oh okay, um, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "mm hm. hm, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "can you check the b- broker?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4000463441"}
+{"context": "", "text": "sure. sounds right. let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Your check call is set for noon.", "text": "t-trailer me at,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1342294746"}
+{"context": "", "text": "got it. that's fine. uh, is there", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "", "text": "sure. uh. sounds right, let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "", "text": "okay, uh...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Can I get your MC number?", "text": "the b- broker is all set", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg491341036"}
+{"context": "", "text": "the r- rate is all set.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: What is your current location?", "text": "oh okay, hm...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "wait, hold on, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg939557621"}
+{"context": "", "text": "actually, um, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "all right. hm, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "", "text": "uh, actually, hold that thought", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "mm hm, er, that's all i needed.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "wait, hold on, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg939557621"}
+{"context": "", "text": "yep, um...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "mm hm, uh...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Where are you now?", "text": "what is d- delivery", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg611504699"}
+{"context": "", "text": "can you check the d- delivery?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: Anything else I can help with?", "text": "oh okay. um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "", "text": "yep. uh. makes sense, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: I will email you the updated BOL.", "text": "got it. er, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "sure. that's funny. er, so the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "", "text": "yeah, uh, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Your check call is set for noon.", "text": "right. uh. understood, send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "", "text": "yep, hm, send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "do i, do i is the lumper fee", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "yep, send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: What number can I reach you at?", "text": "right, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "when, when", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3999730671"}
+{"context": "Agent: What number can I reach you at?", "text": "got it, i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "is it, is it the dock number, is that covered?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3738470832"}
+{"context": "", "text": "actually, hm, that works for me.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "wait, hold on, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg939557621"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "d-delivery me at,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1342294746"}
+{"context": "Agent: Where are you now?", "text": "mm hm. mm hm. no problem. can you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "Agent: What is your MC?", "text": "but, um, send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "okay. no problem. hm, do you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "Agent: What is your MC?", "text": "like, er, that works for me.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "got it, send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "sure. er. that works for me", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "well, uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "", "text": "who, who", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3999730671"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "all right. uh. go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: I will email you the updated BOL.", "text": "can you check the p- pickup", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "actually, um, let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "l-lumper me at,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1342294746"}
+{"context": "", "text": "mm hm, that works for me", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "yep, before that, is the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "", "text": "right, um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1544752322"}
+{"context": "", "text": "oh okay. that's funny. and the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "", "text": "mm hm. uh, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "", "text": "got it, i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: I will email you the updated BOL.", "text": "uh, sorry, one second, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2789786212"}
+{"context": "Agent: Your check call is set for noon.", "text": "and then, and then, and then is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg665828576"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "got it. uh. i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "yeah. er, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "uh, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: The dock closes at eight am today.", "text": "yeah. uh. that works for me", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "oh okay, hm", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Best callback number?", "text": "oh okay. uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "sure. i see. er, i don't", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "", "text": "sure. er. i see, let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: Your check call is set for noon.", "text": "yeah. i got it. um, what is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "mm hm. uh. no problem, that works for me.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "", "text": "sure. sure. i see. would it", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "Agent: What is your MC?", "text": "sure. that's funny. i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "", "text": "okay, uh", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "the b- broker is all set", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "all right, hm, i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "why, why the lumper fee, do you have", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Anything else I can help with?", "text": "all right. um, what about the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "", "text": "when, when is the delivery window", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1362226522"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "mm hm, then just call me", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "okay. okay. that's funny. i don't", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "do i, do i, do i is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg665828576"}
+{"context": "", "text": "mm hm. er,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "sure, um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1544752322"}
+{"context": "Agent: I will email you the updated BOL.", "text": "mm hm. uh. i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "sure, uh, i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "", "text": "right, er,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1544752322"}
+{"context": "", "text": "yeah, uh, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: I will email you the updated BOL.", "text": "got it, i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: What number can I reach you at?", "text": "is it, is it, is it is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg665828576"}
+{"context": "Agent: What is your current location?", "text": "okay. okay. no problem. do you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3830883127"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "okay, uh, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Your check call is set for noon.", "text": "right. um. send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: Dispatch, how can I help?", "text": "oh, before i forget, one more question.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4124825803"}
+{"context": "Agent: I will email you the updated BOL.", "text": "oh, before i forget, one more question", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4124825803"}
+{"context": "", "text": "the r- rate is all set", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg491341036"}
+{"context": "", "text": "all right. uh. send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: What number can I reach you at?", "text": "sure. sounds right. i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "can you check the p- pickup?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4000463441"}
+{"context": "", "text": "oh okay. that's funny. i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Where are you now?", "text": "all right, uh, send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: What number can I reach you at?", "text": "okay, that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: I will email you the updated BOL.", "text": "do i, do i the load number", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3598302131"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "mm hm. no problem. that works for me", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: What is your current location?", "text": "sure, er, send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: What is your current location?", "text": "sure, uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1544752322"}
+{"context": "", "text": "er, sorry, one second, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2789786212"}
+{"context": "", "text": "sure. uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "Agent: Can I get your MC number?", "text": "okay. er, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "", "text": "can you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1960132945"}
+{"context": "", "text": "got it. er, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: This is dispatch, go ahead.", "text": "so, uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "Agent: Best callback number?", "text": "mm hm. er, before that, is the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "Agent: Anything else I can help with?", "text": "okay. sounds right. uh, is there", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg876014290"}
+{"context": "", "text": "oh okay. um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "yeah. no problem. i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Your check call is set for noon.", "text": "right. uh. understood, send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "", "text": "um, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "got it. hm. let's do that.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: The dock closes at eight am today.", "text": "so the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1960132945"}
+{"context": "Agent: Where are you now?", "text": "oh, before i forget, one more question.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4124825803"}
+{"context": "", "text": "right, i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "", "text": "d-delivery me at,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1342294746"}
+{"context": "Agent: I will email you the updated BOL.", "text": "um, actually, hold that thought", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: I will email you the updated BOL.", "text": "got it, i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: Where are you now?", "text": "right. understood. and the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "", "text": "i mean, um, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "um, i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "", "text": "how, how the rate con", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3598302131"}
+{"context": "Agent: Your check call is set for noon.", "text": "right. er, wait, does that mean the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "", "text": "yep. um, before that, is the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "", "text": "i mean, er, i'm good.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "Agent: Can I get your MC number?", "text": "um, sorry, one second, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2789786212"}
+{"context": "Agent: Your check call is set for noon.", "text": "the b- broker is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg599550250"}
+{"context": "", "text": "but, um,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3834192208"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "wait, hold on, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg939557621"}
+{"context": "", "text": "yeah. i see. let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Is there anything else?", "text": "um, actually, hold that thought", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2838112348"}
+{"context": "", "text": "yep, hm...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "yeah. uh, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "sure, er...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Where are you now?", "text": "oh okay. sure thing. that's all i needed.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Dispatch, how can I help?", "text": "um, actually, hold that thought", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: Is there anything else?", "text": "can you", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1960132945"}
+{"context": "", "text": "yeah. i got it. about the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "Agent: The dock closes at eight am today.", "text": "uh, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "", "text": "oh okay, uh...", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: Best callback number?", "text": "how, how the trailer number, who do i call about", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "uh, go ahead and book it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: Where are you now?", "text": "um, sorry, one second, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2789786212"}
+{"context": "Agent: Can I get your MC number?", "text": "can you check the r- rate", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4000463441"}
+{"context": "Agent: Rate is twenty one fifty all in.", "text": "got it, hm", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "", "text": "the t- trailer is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg599550250"}
+{"context": "Agent: What is your MC?", "text": "do i, do i the rate con, is that covered", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "Agent: Where are you now?", "text": "w-weight me at,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1342294746"}
+{"context": "", "text": "okay. hm. no problem, i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: I will email you the updated BOL.", "text": "mm hm. uh. i'm good", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: Is there anything else?", "text": "sure. er. sure thing, send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg23504188"}
+{"context": "Agent: What number can I reach you at?", "text": "okay, uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1544752322"}
+{"context": "Agent: I will email you the updated BOL.", "text": "the w- weight is all set", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg491341036"}
+{"context": "", "text": "would it", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1960132945"}
+{"context": "", "text": "oh, before i forget, one more question.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg4124825803"}
+{"context": "Agent: What is your current location?", "text": "mm hm, that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: The dock closes at eight am today.", "text": "okay. sure thing. send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "", "text": "sure. i see. and the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3189576118"}
+{"context": "Agent: The dock closes at eight am today.", "text": "yeah. hm, one more thing.", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1264423168"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "the t- trailer is all set", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg491341036"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "okay. sounds right. i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Is there anything else?", "text": "got it. hm, let me ask about the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "", "text": "um, that answers it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3729091582"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "mm hm, let me ask about the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "", "text": "what is w- weight", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg611504699"}
+{"context": "Agent: Can you make the tomorrow morning appointment?", "text": "the w- weight is all set.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg491341036"}
+{"context": "", "text": "all right, uh, i'll take it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Is there anything else?", "text": "sure. er. sure thing, send it over.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg23504188"}
+{"context": "", "text": "when, when the delivery window", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3598302131"}
+{"context": "Agent: Is there anything else?", "text": "uh, sorry, one second, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2789786212"}
+{"context": "Agent: Best callback number?", "text": "mm hm. er. send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "Agent: What is your current location?", "text": "mm hm. uh, what about the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1572021304"}
+{"context": "Agent: I will email you the updated BOL.", "text": "yep, um, that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}
+{"context": "Agent: Best I can do is twenty one fifty.", "text": "is it, is it", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3999730671"}
+{"context": "", "text": "who, who the gate code, what time is", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3738470832"}
+{"context": "", "text": "oh okay, that answers it", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg1312321589"}
+{"context": "Agent: Your check call is set for noon.", "text": "er, actually, hold that thought", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2838112348"}
+{"context": "Agent: The dock closes at eight am today.", "text": "wait, hold on, one more thing", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg939557621"}
+{"context": "Agent: Your check call is set for noon.", "text": "oh, before i forget, one more question", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg4124825803"}
+{"context": "Agent: What is your MC?", "text": "so, er, go ahead and book it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "sure, um", "label": "wait", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg2539438552"}
+{"context": "Agent: What number can I reach you at?", "text": "sure. sounds right. i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1184801674"}
+{"context": "Agent: Does the tomorrow morning slot work?", "text": "sure, the other thing is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: I will email you the updated BOL.", "text": "can you, can you is the rate con?", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg1362226522"}
+{"context": "", "text": "i mean, uh, i'll take it.", "label": "speak", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg2037085232"}
+{"context": "", "text": "mm hm, hold on, what is the", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3455876532"}
+{"context": "Agent: Your check call is set for noon.", "text": "right. um. send it over", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg3624467260"}
+{"context": "", "text": "yeah. uh,", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg3454836519"}
+{"context": "Agent: Best callback number?", "text": "the t- trailer is", "label": "wait", "cls": "R", "variant": "clean", "lang": "en", "tpl": "reg599550250"}
+{"context": "Agent: I will email you the updated BOL.", "text": "all right, um, let's do that", "label": "speak", "cls": "R", "variant": "asr", "lang": "en", "tpl": "reg232652003"}

@@ -1,0 +1,2789 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>EoT Evaluation Console</title>
+
+<style>
+/* =========================================================
+   EoT Evaluation Console
+   Senior-level single-file dashboard
+   ========================================================= */
+
+:root {
+  --bg: #080b10;
+  --bg-soft: #0d1118;
+  --surface: #11161e;
+  --surface-2: #151b24;
+  --surface-3: #1a212c;
+
+  --border: rgba(255,255,255,.09);
+  --border-strong: rgba(255,255,255,.15);
+
+  --text: #f4f7fb;
+  --text-soft: #b7c0cc;
+  --text-muted: #7d8794;
+
+  --accent: #7c9cff;
+  --accent-soft: rgba(124,156,255,.12);
+
+  --green: #55d88a;
+  --green-soft: rgba(85,216,138,.12);
+
+  --amber: #e7a84d;
+  --amber-soft: rgba(231,168,77,.12);
+
+  --red: #ff6b6b;
+  --red-soft: rgba(255,107,107,.12);
+
+  --purple: #b08cff;
+  --purple-soft: rgba(176,140,255,.12);
+
+  --cyan: #54d5e8;
+  --cyan-soft: rgba(84,213,232,.12);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+
+  --shadow:
+    0 18px 60px rgba(0,0,0,.25);
+
+  --font:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  --mono:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+
+  color: var(--text);
+  background:
+    radial-gradient(
+      circle at 10% -10%,
+      rgba(124,156,255,.12),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 0%,
+      rgba(176,140,255,.08),
+      transparent 28%
+    ),
+    var(--bg);
+
+  font-family: var(--font);
+  line-height: 1.5;
+}
+
+/* =========================================================
+   APP SHELL
+   ========================================================= */
+
+.app {
+  width: min(1500px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 28px 0 60px;
+}
+
+/* =========================================================
+   TOP NAV
+   ========================================================= */
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  padding: 18px 20px;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.035),
+      rgba(255,255,255,.015)
+    );
+
+  backdrop-filter: blur(18px);
+
+  box-shadow: var(--shadow);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.brand-mark {
+  width: 40px;
+  height: 40px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--accent),
+      var(--purple)
+    );
+
+  color: #fff;
+
+  box-shadow:
+    0 8px 30px rgba(124,156,255,.25);
+}
+
+.brand-mark svg {
+  width: 21px;
+  height: 21px;
+}
+
+.brand-name {
+  font-size: 15px;
+  font-weight: 750;
+  letter-spacing: -.01em;
+}
+
+.brand-sub {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-top: 1px;
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.env-pill,
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 7px 11px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  border: 1px solid var(--border);
+  color: var(--text-soft);
+  background: rgba(255,255,255,.025);
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+  background: var(--green);
+
+  box-shadow:
+    0 0 0 4px rgba(85,216,138,.08);
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 30px;
+
+  margin: 44px 0 28px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: var(--accent);
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  content: "";
+
+  width: 22px;
+  height: 1px;
+
+  background: currentColor;
+}
+
+h1 {
+  margin: 10px 0 10px;
+
+  max-width: 850px;
+
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.04;
+  letter-spacing: -.045em;
+}
+
+.hero-description {
+  max-width: 900px;
+
+  margin: 0;
+
+  color: var(--text-soft);
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.hero-side {
+  min-width: 250px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.hero-side-card {
+  padding: 18px 20px;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+
+  background: var(--surface);
+
+  min-width: 245px;
+}
+
+.hero-side-label {
+  color: var(--text-muted);
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.hero-side-value {
+  margin-top: 6px;
+
+  font-size: 27px;
+  font-weight: 800;
+
+  letter-spacing: -.04em;
+}
+
+.hero-side-meta {
+  color: var(--text-muted);
+
+  font-size: 12px;
+}
+
+/* =========================================================
+   METRIC CARDS
+   ========================================================= */
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+
+  margin-bottom: 28px;
+}
+
+.metric {
+  position: relative;
+
+  padding: 18px;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.035),
+      rgba(255,255,255,.015)
+    );
+
+  overflow: hidden;
+}
+
+.metric::after {
+  content: "";
+
+  position: absolute;
+
+  right: -30px;
+  bottom: -45px;
+
+  width: 110px;
+  height: 110px;
+
+  border-radius: 50%;
+
+  background: var(--accent-soft);
+}
+
+.metric-label {
+  position: relative;
+  z-index: 1;
+
+  color: var(--text-muted);
+
+  font-size: 11px;
+  font-weight: 750;
+
+  text-transform: uppercase;
+  letter-spacing: .09em;
+}
+
+.metric-value {
+  position: relative;
+  z-index: 1;
+
+  margin-top: 8px;
+
+  font-size: 28px;
+  font-weight: 800;
+
+  letter-spacing: -.04em;
+}
+
+.metric-meta {
+  position: relative;
+  z-index: 1;
+
+  margin-top: 3px;
+
+  color: var(--text-muted);
+
+  font-size: 12px;
+}
+
+.metric.green .metric-value {
+  color: var(--green);
+}
+
+.metric.amber .metric-value {
+  color: var(--amber);
+}
+
+.metric.red .metric-value {
+  color: var(--red);
+}
+
+.metric.purple .metric-value {
+  color: var(--purple);
+}
+
+.metric.cyan .metric-value {
+  color: var(--cyan);
+}
+
+/* =========================================================
+   MODEL CARDS
+   ========================================================= */
+
+.section-title {
+  margin: 38px 0 14px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-title h2 {
+  margin: 0;
+
+  font-size: 16px;
+  letter-spacing: -.015em;
+}
+
+.section-title p {
+  margin: 0;
+
+  color: var(--text-muted);
+
+  font-size: 12px;
+}
+
+.models {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.model-card {
+  padding: 20px;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+
+  background: var(--surface);
+
+  transition:
+    border-color .2s ease,
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.model-card:hover {
+  transform: translateY(-2px);
+
+  border-color: var(--border-strong);
+
+  box-shadow:
+    0 20px 55px rgba(0,0,0,.25);
+}
+
+.model-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.model-title-wrap {
+  display: flex;
+  gap: 12px;
+}
+
+.model-icon {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 11px;
+
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.model-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.model-name {
+  font-size: 15px;
+  font-weight: 750;
+
+  line-height: 1.3;
+}
+
+.model-size {
+  margin-top: 3px;
+
+  color: var(--text-muted);
+
+  font-size: 12px;
+}
+
+.model-threshold {
+  text-align: right;
+}
+
+.threshold-label {
+  color: var(--text-muted);
+
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+}
+
+.threshold-value {
+  margin-top: 2px;
+
+  font-family: var(--mono);
+  font-size: 21px;
+  font-weight: 750;
+}
+
+.model-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.model-stat {
+  padding: 12px;
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  background: rgba(255,255,255,.02);
+}
+
+.model-stat-label {
+  color: var(--text-muted);
+
+  font-size: 10px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.model-stat-value {
+  margin-top: 4px;
+
+  font-family: var(--mono);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   TOOLBAR
+   ========================================================= */
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+
+  margin: 18px 0 12px;
+
+  padding: 12px;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+
+  background: var(--surface);
+}
+
+.search {
+  position: relative;
+
+  flex: 1;
+}
+
+.search svg {
+  position: absolute;
+
+  left: 12px;
+  top: 50%;
+
+  width: 16px;
+  height: 16px;
+
+  color: var(--text-muted);
+
+  transform: translateY(-50%);
+}
+
+.search input {
+  width: 100%;
+
+  height: 40px;
+
+  padding: 0 14px 0 38px;
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 9px;
+
+  outline: none;
+
+  color: var(--text);
+
+  background: var(--bg-soft);
+
+  font: inherit;
+  font-size: 13px;
+
+  transition:
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+
+.search input::placeholder {
+  color: var(--text-muted);
+}
+
+.search input:focus {
+  border-color: rgba(124,156,255,.55);
+
+  box-shadow:
+    0 0 0 3px rgba(124,156,255,.10);
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  height: 40px;
+
+  padding: 0 12px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 9px;
+
+  color: var(--text-soft);
+
+  background: var(--bg-soft);
+
+  cursor: pointer;
+
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+
+  transition: .2s ease;
+}
+
+.filter-btn:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.filter-btn.active {
+  border-color: rgba(124,156,255,.45);
+
+  color: var(--accent);
+
+  background: var(--accent-soft);
+}
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.table-shell {
+  overflow: hidden;
+
+  border:
+    1px solid var(--border);
+
+  border-radius: var(--radius-xl);
+
+  background: var(--surface);
+
+  box-shadow: var(--shadow);
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 1180px;
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  padding: 15px 14px;
+
+  text-align: left;
+
+  border-bottom:
+    1px solid var(--border-strong);
+
+  background:
+    rgba(17,22,30,.96);
+
+  backdrop-filter: blur(12px);
+
+  color: var(--text-muted);
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+thead th:first-child {
+  padding-left: 18px;
+}
+
+tbody tr {
+  transition: background .15s ease;
+}
+
+tbody tr:hover {
+  background: rgba(255,255,255,.025);
+}
+
+tbody td {
+  padding: 14px;
+
+  border-bottom:
+    1px solid var(--border);
+
+  vertical-align: top;
+
+  font-size: 13px;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+td.number {
+  width: 50px;
+
+  padding-left: 18px;
+
+  color: var(--text-muted);
+
+  font-family: var(--mono);
+  font-size: 11px;
+}
+
+.class-cell {
+  width: 185px;
+}
+
+.class-name {
+  font-weight: 650;
+
+  color: var(--text);
+}
+
+.class-code {
+  display: inline-flex;
+
+  margin-bottom: 5px;
+
+  padding: 3px 7px;
+
+  border-radius: 6px;
+
+  background: var(--surface-3);
+
+  color: var(--text-muted);
+
+  font-family: var(--mono);
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.utterance {
+  min-width: 290px;
+  max-width: 450px;
+}
+
+.context {
+  margin-bottom: 5px;
+
+  color: var(--text-muted);
+
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.say {
+  color: var(--text);
+
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.policy-cell {
+  width: 100px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 60px;
+
+  padding: 5px 9px;
+
+  border-radius: 7px;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: .05em;
+}
+
+.badge.speak {
+  color: var(--green);
+
+  border: 1px solid rgba(85,216,138,.2);
+
+  background: var(--green-soft);
+}
+
+.badge.wait {
+  color: var(--amber);
+
+  border: 1px solid rgba(231,168,77,.2);
+
+  background: var(--amber-soft);
+}
+
+.badge.unsure {
+  color: var(--purple);
+
+  border: 1px solid rgba(176,140,255,.2);
+
+  background: var(--purple-soft);
+}
+
+/* =========================================================
+   MODEL CELL
+   ========================================================= */
+
+.model-cell {
+  min-width: 270px;
+  width: 300px;
+}
+
+.model-cell.bad {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,107,107,.09),
+      transparent
+    );
+
+  box-shadow:
+    inset 3px 0 0 var(--red);
+}
+
+.score-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 8px;
+}
+
+.score {
+  font-family: var(--mono);
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.latency {
+  color: var(--text-muted);
+
+  font-family: var(--mono);
+
+  font-size: 10px;
+}
+
+.probability {
+  position: relative;
+
+  height: 8px;
+
+  margin: 7px 0 9px;
+
+  overflow: visible;
+
+  border-radius: 99px;
+
+  background:
+    rgba(255,255,255,.065);
+}
+
+.probability-fill {
+  height: 100%;
+
+  border-radius: inherit;
+
+  transition: width .4s ease;
+}
+
+.probability-fill.speak {
+  background:
+    linear-gradient(
+      90deg,
+      #3abf78,
+      #6de5a0
+    );
+}
+
+.probability-fill.wait {
+  background:
+    linear-gradient(
+      90deg,
+      #d18b30,
+      #f2bb63
+    );
+}
+
+.threshold-marker {
+  position: absolute;
+
+  top: -4px;
+
+  width: 2px;
+  height: 16px;
+
+  border-radius: 2px;
+
+  background: #fff;
+
+  box-shadow:
+    0 0 0 2px rgba(255,255,255,.08);
+}
+
+.probability-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.decision {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.decision-dot {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+}
+
+.decision-dot.speak {
+  background: var(--green);
+}
+
+.decision-dot.wait {
+  background: var(--amber);
+}
+
+.decision-dot.unsure {
+  background: var(--purple);
+}
+
+/* =========================================================
+   MISMATCH
+   ========================================================= */
+
+.mismatch {
+  position: relative;
+}
+
+.mismatch::after {
+  content: "POLICY MISMATCH";
+
+  position: absolute;
+
+  top: 8px;
+  right: 10px;
+
+  padding: 3px 6px;
+
+  border-radius: 5px;
+
+  color: var(--red);
+
+  background: var(--red-soft);
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: .06em;
+}
+
+/* =========================================================
+   LEGEND
+   ========================================================= */
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 16px;
+
+  padding: 14px 18px;
+
+  border-top:
+    1px solid var(--border);
+
+  color: var(--text-muted);
+
+  font-size: 11px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.legend-line {
+  width: 18px;
+  height: 2px;
+
+  background: #fff;
+
+  opacity: .7;
+}
+
+/* =========================================================
+   INSIGHT PANEL
+   ========================================================= */
+
+.insights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 14px;
+
+  margin-top: 28px;
+}
+
+.insight-card {
+  padding: 20px;
+
+  border: 1px solid var(--border);
+
+  border-radius: var(--radius-lg);
+
+  background: var(--surface);
+}
+
+.insight-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 16px;
+}
+
+.insight-head h3 {
+  margin: 0;
+
+  font-size: 14px;
+}
+
+.insight-head span {
+  color: var(--text-muted);
+
+  font-family: var(--mono);
+
+  font-size: 11px;
+}
+
+.insight-row {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 11px 0;
+
+  border-bottom:
+    1px solid var(--border);
+}
+
+.insight-row:last-child {
+  border-bottom: 0;
+}
+
+.insight-class {
+  font-family: var(--mono);
+
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.insight-track {
+  height: 6px;
+
+  overflow: hidden;
+
+  border-radius: 99px;
+
+  background: rgba(255,255,255,.06);
+}
+
+.insight-fill {
+  height: 100%;
+
+  border-radius: inherit;
+
+  background: var(--accent);
+}
+
+.insight-value {
+  color: var(--text-soft);
+
+  font-family: var(--mono);
+
+  font-size: 11px;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+  margin-top: 26px;
+
+  padding: 20px 4px;
+
+  color: var(--text-muted);
+
+  font-size: 11px;
+
+  line-height: 1.7;
+}
+
+.footer strong {
+  color: var(--text-soft);
+}
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.empty {
+  padding: 70px 20px;
+
+  text-align: center;
+
+  color: var(--text-muted);
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .metrics {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-side {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .app {
+    width: min(100% - 24px, 1500px);
+    padding-top: 12px;
+  }
+
+  .topbar {
+    padding: 14px;
+  }
+
+  .brand-sub,
+  .env-pill {
+    display: none;
+  }
+
+  .hero {
+    margin-top: 30px;
+  }
+
+  .hero-side-card {
+    width: 100%;
+  }
+
+  .metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .models {
+    grid-template-columns: 1fr;
+  }
+
+  .toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .insights {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .metric {
+    padding: 14px;
+  }
+
+  .metric-value {
+    font-size: 22px;
+  }
+
+  .model-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .top-actions {
+    display: none;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- =====================================================
+       TOP BAR
+       ===================================================== -->
+
+  <header class="topbar">
+
+    <div class="brand">
+
+      <div class="brand-mark" aria-hidden="true">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+        >
+          <path d="M4 7h16M4 12h11M4 17h16"/>
+          <circle cx="18" cy="12" r="2"/>
+        </svg>
+      </div>
+
+      <div>
+        <div class="brand-name">
+          EoT Evaluation Console
+        </div>
+
+        <div class="brand-sub">
+          End-of-turn detection · model benchmark
+        </div>
+      </div>
+
+    </div>
+
+    <div class="top-actions">
+
+      <div class="env-pill">
+        int8 artifacts
+      </div>
+
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        Evaluation complete
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       HERO
+       ===================================================== -->
+
+  <section class="hero">
+
+    <div>
+
+      <div class="eyebrow">
+        Benchmark / EoT
+      </div>
+
+      <h1>
+        End-of-turn probes,
+        side-by-side model evaluation.
+      </h1>
+
+      <p class="hero-description">
+        36 hand-written probes spanning policy classes,
+        off-template assistant register, texting register,
+        Spanish, and boundary cases. Each row is evaluated
+        against the served int8 artifacts using the same
+        thresholding behavior exposed by the API.
+      </p>
+
+    </div>
+
+    <div class="hero-side">
+
+      <div class="hero-side-card">
+
+        <div class="hero-side-label">
+          Model agreement
+        </div>
+
+        <div class="hero-side-value">
+          32 / 36
+        </div>
+
+        <div class="hero-side-meta">
+          88.9% row-level agreement
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       KPI METRICS
+       ===================================================== -->
+
+  <section class="metrics">
+
+    <div class="metric green">
+
+      <div class="metric-label">
+        Probes
+      </div>
+
+      <div class="metric-value">
+        36
+      </div>
+
+      <div class="metric-meta">
+        evaluation rows
+      </div>
+
+    </div>
+
+    <div class="metric green">
+
+      <div class="metric-label">
+        Model A
+      </div>
+
+      <div class="metric-value">
+        31/35
+      </div>
+
+      <div class="metric-meta">
+        policy matches
+      </div>
+
+    </div>
+
+    <div class="metric cyan">
+
+      <div class="metric-label">
+        Model B
+      </div>
+
+      <div class="metric-value">
+        34/35
+      </div>
+
+      <div class="metric-meta">
+        policy matches
+      </div>
+
+    </div>
+
+    <div class="metric purple">
+
+      <div class="metric-label">
+        Agreement
+      </div>
+
+      <div class="metric-value">
+        88.9%
+      </div>
+
+      <div class="metric-meta">
+        32 of 36 rows
+      </div>
+
+    </div>
+
+    <div class="metric amber">
+
+      <div class="metric-label">
+        Boundary
+      </div>
+
+      <div class="metric-value">
+        7
+      </div>
+
+      <div class="metric-meta">
+        ambiguous cards
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       MODEL SUMMARY
+       ===================================================== -->
+
+  <div class="section-title">
+
+    <div>
+      <h2>Model configuration</h2>
+    </div>
+
+    <p>
+      Thresholds selected on the development set
+    </p>
+
+  </div>
+
+
+  <section class="models">
+
+    <article class="model-card">
+
+      <div class="model-head">
+
+        <div class="model-title-wrap">
+
+          <div class="model-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <rect x="4" y="4" width="16" height="16" rx="3"/>
+              <path d="M8 12h8M12 8v8"/>
+            </svg>
+          </div>
+
+          <div>
+
+            <div class="model-name">
+              Fine-tuned DistilBERT
+            </div>
+
+            <div class="model-size">
+              66.96M parameters · production artifact
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="model-threshold">
+
+          <div class="threshold-label">
+            Threshold
+          </div>
+
+          <div class="threshold-value">
+            0.42
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="model-stats">
+
+        <div class="model-stat">
+
+          <div class="model-stat-label">
+            Policy match
+          </div>
+
+          <div class="model-stat-value">
+            31 / 35
+          </div>
+
+        </div>
+
+        <div class="model-stat">
+
+          <div class="model-stat-label">
+            Match rate
+          </div>
+
+          <div class="model-stat-value">
+            88.6%
+          </div>
+
+        </div>
+
+        <div class="model-stat">
+
+          <div class="model-stat-label">
+            Mean latency
+          </div>
+
+          <div class="model-stat-value">
+            17.8 ms
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="model-card">
+
+      <div class="model-head">
+
+        <div class="model-title-wrap">
+
+          <div class="model-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <path d="M12 3v18M3 12h18"/>
+              <circle cx="12" cy="12" r="8"/>
+            </svg>
+          </div>
+
+          <div>
+
+            <div class="model-name">
+              From-scratch own pretrain
+            </div>
+
+            <div class="model-size">
+              7.36M parameters · production artifact
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="model-threshold">
+
+          <div class="threshold-label">
+            Threshold
+          </div>
+
+          <div class="threshold-value">
+            0.79
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="model-stats">
+
+        <div class="model-stat">
+
+          <div class="model-stat-label">
+            Policy match
+          </div>
+
+          <div class="model-stat-value">
+            34 / 35
+          </div>
+
+        </div>
+
+        <div class="model-stat">
+
+          <div class="model-stat-label">
+            Match rate
+          </div>
+
+          <div class="model-stat-value">
+            97.1%
+          </div>
+
+        </div>
+
+        <div class="model-stat">
+
+          <div class="model-stat-label">
+            Mean latency
+          </div>
+
+          <div class="model-stat-value">
+            2.9 ms
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+  </section>
+
+
+  <!-- =====================================================
+       EVALUATION TABLE
+       ===================================================== -->
+
+  <div class="section-title">
+
+    <div>
+      <h2>Probe evaluation</h2>
+    </div>
+
+    <p>
+      Probability → threshold → decision
+    </p>
+
+  </div>
+
+
+  <div class="toolbar">
+
+    <div class="search">
+
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <circle cx="11" cy="11" r="7"/>
+        <path d="m20 20-4-4"/>
+      </svg>
+
+      <input
+        id="search"
+        type="search"
+        placeholder="Search probe, class, or utterance..."
+        autocomplete="off"
+      >
+
+    </div>
+
+    <div class="filters">
+
+      <button
+        class="filter-btn active"
+        data-filter="all"
+      >
+        All
+      </button>
+
+      <button
+        class="filter-btn"
+        data-filter="mismatch"
+      >
+        Mismatches
+      </button>
+
+      <button
+        class="filter-btn"
+        data-filter="speak"
+      >
+        Speak
+      </button>
+
+      <button
+        class="filter-btn"
+        data-filter="wait"
+      >
+        Wait
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <div class="table-shell">
+
+    <div class="table-scroll">
+
+      <table>
+
+        <thead>
+
+          <tr>
+
+            <th>#</th>
+
+            <th>Class</th>
+
+            <th>Caller utterance</th>
+
+            <th>Policy</th>
+
+            <th>
+              Fine-tuned DistilBERT
+              <div style="
+                margin-top:5px;
+                font-size:9px;
+                font-weight:500;
+                letter-spacing:0;
+                text-transform:none;
+              ">
+                threshold 0.42 · 66.96M
+              </div>
+            </th>
+
+            <th>
+              From-scratch
+              <div style="
+                margin-top:5px;
+                font-size:9px;
+                font-weight:500;
+                letter-spacing:0;
+                text-transform:none;
+              ">
+                threshold 0.79 · 7.36M
+              </div>
+            </th>
+
+          </tr>
+
+        </thead>
+
+        <tbody id="results"></tbody>
+
+      </table>
+
+    </div>
+
+
+    <div class="legend">
+
+      <div class="legend-item">
+        <span class="legend-line"></span>
+        threshold
+      </div>
+
+      <div class="legend-item">
+        <span class="badge speak">SPEAK</span>
+        turn considered complete
+      </div>
+
+      <div class="legend-item">
+        <span class="badge wait">WAIT</span>
+        continue listening
+      </div>
+
+      <div class="legend-item">
+        <span class="badge unsure">UNSURE</span>
+        boundary / ambiguous
+      </div>
+
+      <div class="legend-item">
+        <strong style="color:var(--red);">
+          red edge
+        </strong>
+        policy mismatch
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       INSIGHTS
+       ===================================================== -->
+
+  <section class="insights">
+
+    <article class="insight-card">
+
+      <div class="insight-head">
+
+        <h3>
+          Policy-class coverage
+        </h3>
+
+        <span>
+          36 probes
+        </span>
+
+      </div>
+
+      <div class="insight-row">
+
+        <div class="insight-class">A–C</div>
+
+        <div class="insight-track">
+          <div
+            class="insight-fill"
+            style="width:100%"
+          ></div>
+        </div>
+
+        <div class="insight-value">
+          7
+        </div>
+
+      </div>
+
+      <div class="insight-row">
+
+        <div class="insight-class">D–G</div>
+
+        <div class="insight-track">
+          <div
+            class="insight-fill"
+            style="width:100%"
+          ></div>
+        </div>
+
+        <div class="insight-value">
+          7
+        </div>
+
+      </div>
+
+      <div class="insight-row">
+
+        <div class="insight-class">H–K</div>
+
+        <div class="insight-track">
+          <div
+            class="insight-fill"
+            style="width:100%"
+          ></div>
+        </div>
+
+        <div class="insight-value">
+          10
+        </div>
+
+      </div>
+
+      <div class="insight-row">
+
+        <div class="insight-class">Off-template</div>
+
+        <div class="insight-track">
+          <div
+            class="insight-fill"
+            style="width:57%"
+          ></div>
+        </div>
+
+        <div class="insight-value">
+          4
+        </div>
+
+      </div>
+
+      <div class="insight-row">
+
+        <div class="insight-class">Spanish</div>
+
+        <div class="insight-track">
+          <div
+            class="insight-fill"
+            style="width:57%"
+          ></div>
+        </div>
+
+        <div class="insight-value">
+          7
+        </div>
+
+      </div>
+
+      <div class="insight-row">
+
+        <div class="insight-class">Boundary</div>
+
+        <div class="insight-track">
+          <div
+            class="insight-fill"
+            style="width:14%"
+          ></div>
+        </div>
+
+        <div class="insight-value">
+          1
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="insight-card">
+
+      <div class="insight-head">
+
+        <h3>
+          Evaluation notes
+        </h3>
+
+        <span>
+          methodology
+        </span>
+
+      </div>
+
+      <div style="
+        color:var(--text-soft);
+        font-size:13px;
+        line-height:1.75;
+      ">
+
+        <p style="margin-top:0;">
+          Thresholds come from the development set under
+          the twelve tier-1 guardrail constraints and are
+          evaluated on the same served int8 artifacts.
+        </p>
+
+        <p>
+          Latency represents model-only single-row inference
+          after warm-up on a laptop. It excludes network,
+          serialization, tokenization, and API overhead.
+        </p>
+
+        <p style="margin-bottom:0;">
+          Boundary probes are intentionally ambiguous.
+          They are useful for inspecting whether a model
+          changes decision behavior close to its selected
+          operating threshold.
+        </p>
+
+      </div>
+
+    </article>
+
+  </section>
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+  <footer class="footer">
+
+    <strong>EoT Evaluation Console</strong>
+    · served artifact benchmark
+
+    <br>
+
+    Probability bars represent
+    <strong>P(turn complete)</strong>.
+    The vertical marker represents each model's selected
+    decision threshold.
+
+  </footer>
+
+</div>
+
+
+<script>
+/* =========================================================
+   DATA
+   ========================================================= */
+
+const MODELS = {
+  distilbert: {
+    threshold: 0.42
+  },
+
+  scratch: {
+    threshold: 0.79
+  }
+};
+
+
+const ROWS = [
+  {
+    n: 1,
+    cls: "A",
+    name: "Complete statement",
+    context: "agent: Dispatch, how can I help?",
+    text: "I'm loaded and rolling out of Fontana now.",
+    expected: "speak",
+    a: { p: .987, decision: "speak", ms: 20.1 },
+    b: { p: .999, decision: "speak", ms: 3.3 }
+  },
+
+  {
+    n: 2,
+    cls: "A",
+    name: "Complete statement, ASR style",
+    context: "",
+    text: "i delivered to the receiver about an hour ago",
+    expected: "speak",
+    a: { p: .971, decision: "speak", ms: 20.6 },
+    b: { p: .999, decision: "speak", ms: 2.8 }
+  },
+
+  {
+    n: 3,
+    cls: "B",
+    name: "Complete question",
+    context: "",
+    text: "What time does the warehouse close?",
+    expected: "speak",
+    a: { p: .983, decision: "speak", ms: 17.4 },
+    b: { p: .999, decision: "speak", ms: 2.8 }
+  },
+
+  {
+    n: 4,
+    cls: "B",
+    name: "Complete question, ASR style",
+    context: "",
+    text: "do i need a lumper receipt for this one",
+    expected: "speak",
+    a: { p: .018, decision: "wait", ms: 19.4 },
+    b: { p: .001, decision: "wait", ms: 3.1 }
+  },
+
+  {
+    n: 5,
+    cls: "C",
+    name: "Ack",
+    context: "agent: The dock closes at three thirty today.",
+    text: "Okay, got it.",
+    expected: "speak",
+    a: { p: .988, decision: "speak", ms: 19.6 },
+    b: { p: .999, decision: "speak", ms: 2.9 }
+  },
+
+  {
+    n: 6,
+    cls: "C",
+    name: "Casual closer",
+    context: "agent: Anything else I can help with?",
+    text: "nah bye",
+    expected: "speak",
+    a: { p: .985, decision: "speak", ms: 17.9 },
+    b: { p: .999, decision: "speak", ms: 2.9 }
+  },
+
+  {
+    n: 7,
+    cls: "C",
+    name: "Texting register",
+    context: "agent: Your check call is set for noon.",
+    text: "k thanks",
+    expected: "speak",
+    a: { p: .987, decision: "speak", ms: 17.7 },
+    b: { p: .999, decision: "speak", ms: 2.8 }
+  },
+
+  {
+    n: 8,
+    cls: "D",
+    name: "Mid-clause cutoff",
+    context: "",
+    text: "So after I deliver in Ontario I was planning to",
+    expected: "wait",
+    a: { p: .011, decision: "wait", ms: 19.9 },
+    b: { p: .001, decision: "wait", ms: 2.8 }
+  },
+
+  {
+    n: 9,
+    cls: "D",
+    name: "Mid-clause cutoff",
+    context: "",
+    text: "Can you tell the receiver that my ETA is now",
+    expected: "wait",
+    a: { p: .017, decision: "wait", ms: 16.8 },
+    b: { p: .001, decision: "wait", ms: 3.1 }
+  },
+
+  {
+    n: 10,
+    cls: "E",
+    name: "Disfluent trail",
+    context: "",
+    text: "Yeah so, um, the thing is, uh",
+    expected: "wait",
+    a: { p: .012, decision: "wait", ms: 17.2 },
+    b: { p: .001, decision: "wait", ms: 2.8 }
+  },
+
+  {
+    n: 11,
+    cls: "F",
+    name: "Mid-data readout",
+    context: "agent: Can I get your MC number?",
+    text: "yeah it's four one five",
+    expected: "wait",
+    a: { p: .012, decision: "wait", ms: 17.3 },
+    b: { p: .001, decision: "wait", ms: 2.9 }
+  },
+
+  {
+    n: 12,
+    cls: "F",
+    name: "Mid-data readout",
+    context: "agent: Best callback number?",
+    text: "my cell is three three zero, two",
+    expected: "wait",
+    a: { p: .011, decision: "wait", ms: 17.3 },
+    b: { p: .001, decision: "wait", ms: 2.8 }
+  },
+
+  {
+    n: 13,
+    cls: "G",
+    name: "Connector-final",
+    context: "",
+    text: "I can pick up Thursday morning, but",
+    expected: "wait",
+    a: { p: .012, decision: "wait", ms: 17.1 },
+    b: { p: .001, decision: "wait", ms: 2.8 }
+  },
+
+  {
+    n: 14,
+    cls: "G",
+    name: "Connector-final",
+    context: "",
+    text: "The rate works for me, although",
+    expected: "wait",
+    a: { p: .025, decision: "wait", ms: 16.9 },
+    b: { p: .001, decision: "wait", ms: 2.9 }
+  },
+
+  {
+    n: 15,
+    cls: "H",
+    name: "Complete, might continue",
+    context: "agent: Where are you now?",
+    text: "Just passed Barstow.",
+    expected: "speak",
+    a: { p: .986, decision: "speak", ms: 18.9 },
+    b: { p: .999, decision: "speak", ms: 3.2 }
+  },
+
+  {
+    n: 16,
+    cls: "H",
+    name: "Announced continuation",
+    context: "agent: Anything else I can help with?",
+    text: "Actually yeah, one more thing.",
+    expected: "wait",
+    a: { p: .036, decision: "wait", ms: 18.5 },
+    b: { p: .003, decision: "wait", ms: 2.9 }
+  },
+
+  {
+    n: 17,
+    cls: "H",
+    name: "Announced continuation",
+    context: "agent: Is there anything else?",
+    text: "Wait, before you go, one more question.",
+    expected: "wait",
+    a: { p: .015, decision: "wait", ms: 17.2 },
+    b: { p: .006, decision: "wait", ms: 2.9 }
+  },
+
+  {
+    n: 18,
+    cls: "I",
+    name: "Hedge, attributed",
+    context: "",
+    text: "The broker said the lumper was covered, supposedly.",
+    expected: "speak",
+    a: { p: .981, decision: "speak", ms: 18.2 },
+    b: { p: .999, decision: "speak", ms: 2.8 }
+  },
+
+  {
+    n: 19,
+    cls: "I",
+    name: "Hedge, owned",
+    context: "",
+    text: "The detention was approved, or something",
+    expected: "wait",
+    a: { p: .010, decision: "wait", ms: 17.6 },
+    b: { p: .001, decision: "wait", ms: 2.8 }
+  },
+
+  {
+    n: 20,
+    cls: "I",
+    name: "Handoff hedge",
+    context: "",
+    text: "That's all I need, I guess.",
+    expected: "speak",
+    a: { p: .985, decision: "speak", ms: 17.5 },
+    b: { p: .999, decision: "speak", ms: 2.8 }
+  },
+
+  {
+    n: 21,
+    cls: "I",
+    name: "Owned statement, no softener",
+    context: "",
+    text: "The rate came out to nineteen fifty.",
+    expected: "speak",
+    a: { p: .966, decision: "speak", ms: 17.2 },
+    b: { p: .993, decision: "speak", ms: 2.9 }
+  },
+
+  {
+    n: 22,
+    cls: "J",
+    name: "Self-interrupt",
+    context: "",
+    text: "Book me on the- wait, hold on",
+    expected: "wait",
+    a: { p: .184, decision: "wait", ms: 16.9 },
+    b: { p: .001, decision: "wait", ms: 2.8 }
+  },
+
+  {
+    n: 23,
+    cls: "J",
+    name: "Full retraction",
+    context: "",
+    text: "Can you check the- no, scratch that.",
+    expected: "speak",
+    a: { p: .733, decision: "speak", ms: 16.7 },
+    b: { p: .999, decision: "speak", ms: 2.7 }
+  },
+
+  {
+    n: 24,
+    cls: "K",
+    name: "Self-retrieval hold",
+    context: "",
+    text: "Hang on, let me grab the load number",
+    expected: "wait",
+    a: { p: .013, decision: "wait", ms: 16.8 },
+    b: { p: .001, decision: "wait", ms: 2.7 }
+  },
+
+  {
+    n: 25,
+    cls: "K",
+    name: "Narrated external interruption",
+    context: "",
+    text: "I've got another call coming in, hang on",
+    expected: "speak",
+    a: { p: .978, decision: "speak", ms: 16.5 },
+    b: { p: .988, decision: "speak", ms: 2.8 }
+  },
+
+  {
+    n: 26,
+    cls: "Off",
+    name: "Off-template assistant register",
+    context: "",
+    text: "how many interviews do i have this week",
+    expected: "speak",
+    a: { p: .968, decision: "speak", ms: 16.7 },
+    b: { p: .999, decision: "speak", ms: 2.7 }
+  },
+
+  {
+    n: 27,
+    cls: "Off",
+    name: "Off-template prefix",
+    context: "agent: it is currently fifty-six degrees with clear skies",
+    text: "how about the weather in, like, seven",
+    expected: "wait",
+    a: { p: .061, decision: "wait", ms: 16.5 },
+    b: { p: .001, decision: "wait", ms: 2.7 }
+  },
+
+  {
+    n: 28,
+    cls: "Off",
+    name: "Off-template prefix",
+    context: "",
+    text: "can you move my dentist appointment to",
+    expected: "wait",
+    a: { p: .012, decision: "wait", ms: 18.9 },
+    b: { p: .001, decision: "wait", ms: 3.1 }
+  },
+
+  {
+    n: 29,
+    cls: "Off",
+    name: "Off-template ack",
+    context: "agent: I moved it to Thursday at ten.",
+    text: "yeah that works for me thanks",
+    expected: "speak",
+    a: { p: .987, decision: "speak", ms: 19.0 },
+    b: { p: .999, decision: "speak", ms: 3.4 }
+  },
+
+  {
+    n: 30,
+    cls: "ES",
+    name: "Spanish complete statement",
+    context: "agent: Habla dispatch, dígame.",
+    text: "Ya entregué en la bodega hace como una hora.",
+    expected: "speak",
+    a: { p: .814, decision: "speak", ms: 17.2 },
+    b: { p: .999, decision: "speak", ms: 2.9 }
+  },
+
+  {
+    n: 31,
+    cls: "ES",
+    name: "Spanish question, ASR style",
+    context: "",
+    text: "a qué hora cierra el yard",
+    expected: "speak",
+    a: { p: .777, decision: "speak", ms: 18.7 },
+    b: { p: .995, decision: "speak", ms: 2.8 }
+  },
+
+  {
+    n: 32,
+    cls: "ES",
+    name: "Spanish mid-clause cutoff",
+    context: "",
+    text: "Ando como a veinte millas pero el tráfico en la diez está",
+    expected: "wait",
+    a: { p: .731, decision: "speak", ms: 16.9 },
+    b: { p: .001, decision: "wait", ms: 2.8 }
+  },
+
+  {
+    n: 33,
+    cls: "ES",
+    name: "Spanish mid-data readout",
+    context: "agent: ¿Me da su número de MC?",
+    text: "sí, es siete uno cinco",
+    expected: "wait",
+    a: { p: .734, decision: "speak", ms: 16.8 },
+    b: { p: .001, decision: "wait", ms: 2.7 }
+  },
+
+  {
+    n: 34,
+    cls: "ES",
+    name: "Spanish rate accepted",
+    context: "agent: El rate es mil novecientos, todo incluido.",
+    text: "Órale, la agarro.",
+    expected: "speak",
+    a: { p: .798, decision: "speak", ms: 16.7 },
+    b: { p: .999, decision: "speak", ms: 2.8 }
+  },
+
+  {
+    n: 35,
+    cls: "ES",
+    name: "Spanish announced continuation",
+    context: "agent: ¿Alguna otra cosa?",
+    text: "Ah sí, una cosa más.",
+    expected: "wait",
+    a: { p: .768, decision: "speak", ms: 17.7 },
+    b: { p: .004, decision: "wait", ms: 2.8 }
+  },
+
+  {
+    n: 36,
+    cls: "Boundary",
+    name: "Boundary card",
+    context: "agent: Does the noon slot work?",
+    text: "That should work, probably...",
+    expected: "unsure",
+    a: { p: .072, decision: "wait", ms: 17.9 },
+    b: { p: .979, decision: "speak", ms: 2.8 }
+  }
+];
+
+
+/* =========================================================
+   HELPERS
+   ========================================================= */
+
+function escapeHTML(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+
+function decisionLabel(value) {
+
+  if (value === "speak") {
+    return "SPEAK";
+  }
+
+  if (value === "wait") {
+    return "WAIT";
+  }
+
+  return "UNSURE";
+}
+
+
+function isMismatch(row, model) {
+  return row.expected !== model.decision;
+}
+
+
+/* =========================================================
+   MODEL CELL
+   ========================================================= */
+
+function renderModelCell(model, threshold, row) {
+
+  const mismatch = isMismatch(row, model);
+
+  const percent = Math.max(
+    0,
+    Math.min(100, model.p * 100)
+  );
+
+  const decision = decisionLabel(model.decision);
+
+  return `
+    <td class="model-cell ${mismatch ? "bad mismatch" : ""}">
+
+      <div class="score-row">
+
+        <span class="score">
+          ${model.p.toFixed(3)}
+        </span>
+
+        <span class="latency">
+          ${model.ms.toFixed(1)} ms
+        </span>
+
+      </div>
+
+      <div class="probability">
+
+        <div
+          class="probability-fill ${model.decision}"
+          style="width:${percent}%"
+        ></div>
+
+        <div
+          class="threshold-marker"
+          style="left:${threshold * 100}%"
+          title="Threshold ${threshold.toFixed(2)}"
+        ></div>
+
+      </div>
+
+      <div class="probability-meta">
+
+        <div class="decision">
+
+          <span class="decision-dot ${model.decision}"></span>
+
+          <span class="badge ${model.decision}">
+            ${decision}
+          </span>
+
+        </div>
+
+        <span class="latency">
+          τ ${threshold.toFixed(2)}
+        </span>
+
+      </div>
+
+    </td>
+  `;
+}
+
+
+/* =========================================================
+   TABLE ROW
+   ========================================================= */
+
+function renderRow(row) {
+
+  const mismatch =
+    isMismatch(row, row.a) ||
+    isMismatch(row, row.b);
+
+  return `
+    <tr
+      data-search="${escapeHTML(
+        `${row.n} ${row.cls} ${row.name} ${row.text} ${row.context}`
+      ).toLowerCase()}"
+      data-mismatch="${mismatch}"
+      data-decision="${row.a.decision}"
+    >
+
+      <td class="number">
+        ${row.n}
+      </td>
+
+      <td class="class-cell">
+
+        <div class="class-code">
+          ${escapeHTML(row.cls)}
+        </div>
+
+        <div class="class-name">
+          ${escapeHTML(row.name)}
+        </div>
+
+      </td>
+
+      <td class="utterance">
+
+        ${
+          row.context
+            ? `<div class="context">
+                ${escapeHTML(row.context)}
+               </div>`
+            : ""
+        }
+
+        <div class="say">
+          ${escapeHTML(row.text)}
+        </div>
+
+      </td>
+
+      <td class="policy-cell">
+
+        <span class="badge ${row.expected}">
+          ${decisionLabel(row.expected)}
+        </span>
+
+      </td>
+
+      ${renderModelCell(
+        row.a,
+        MODELS.distilbert.threshold,
+        row
+      )}
+
+      ${renderModelCell(
+        row.b,
+        MODELS.scratch.threshold,
+        row
+      )}
+
+    </tr>
+  `;
+}
+
+
+/* =========================================================
+   RENDER
+   ========================================================= */
+
+const results = document.getElementById("results");
+
+function renderRows() {
+
+  results.innerHTML = ROWS
+    .map(renderRow)
+    .join("");
+
+  applyFilters();
+}
+
+
+/* =========================================================
+   FILTERING
+   ========================================================= */
+
+let activeFilter = "all";
+
+const searchInput =
+  document.getElementById("search");
+
+const filterButtons =
+  document.querySelectorAll(".filter-btn");
+
+
+function applyFilters() {
+
+  const query =
+    searchInput.value
+      .trim()
+      .toLowerCase();
+
+  const rows =
+    results.querySelectorAll("tr");
+
+  let visible = 0;
+
+  rows.forEach(row => {
+
+    const searchText =
+      row.dataset.search || "";
+
+    const mismatch =
+      row.dataset.mismatch === "true";
+
+    const decision =
+      row.dataset.decision;
+
+    const searchMatch =
+      !query ||
+      searchText.includes(query);
+
+    let filterMatch = true;
+
+    if (activeFilter === "mismatch") {
+      filterMatch = mismatch;
+    }
+
+    if (
+      activeFilter === "speak" ||
+      activeFilter === "wait"
+    ) {
+      filterMatch =
+        decision === activeFilter;
+    }
+
+    const show =
+      searchMatch &&
+      filterMatch;
+
+    row.style.display =
+      show ? "" : "none";
+
+    if (show) {
+      visible++;
+    }
+
+  });
+
+  if (!visible) {
+
+    results.innerHTML = `
+      <tr>
+        <td
+          colspan="6"
+          class="empty"
+        >
+          No probes match the current filter.
+        </td>
+      </tr>
+    `;
+
+  }
+
+}
+
+
+searchInput.addEventListener(
+  "input",
+  applyFilters
+);
+
+
+filterButtons.forEach(button => {
+
+  button.addEventListener(
+    "click",
+    () => {
+
+      activeFilter =
+        button.dataset.filter;
+
+      filterButtons.forEach(
+        item =>
+          item.classList.remove("active")
+      );
+
+      button.classList.add("active");
+
+      renderRows();
+
+    }
+  );
+
+});
+
+
+/* =========================================================
+   INITIAL RENDER
+   ========================================================= */
+
+renderRows();
+
+</script>
+
+</body>
+</html>

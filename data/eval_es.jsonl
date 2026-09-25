@@ -1,0 +1,187 @@
+{"context": "", "text": "qué tan lejos queda el shipper de denver", "label": "speak", "cls": "B", "variant": "asr", "lang": "es", "tpl": "es1442818046"}
+{"context": "", "text": "Voy llegando a Tucson como a el mediodía.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es2406090549"}
+{"context": "", "text": "Acabo de pasar Atlanta.", "label": "speak", "cls": "H", "variant": "clean+noctx", "lang": "es", "tpl": "es743136234"}
+{"context": "Agent: ¿A qué número le regreso la llamada?", "text": "mi celular es seis dos, ocho ocho", "label": "wait", "cls": "F", "variant": "asr", "lang": "es", "tpl": "es78597180"}
+{"context": "", "text": "recogí la carga en el cross-dock", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es2124459820"}
+{"context": "", "text": "ya voy cargado saliendo de mcallen ahorita", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2335426890"}
+{"context": "", "text": "ya le mandé el recibo del lumper a", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es3471953317"}
+{"context": "", "text": "Acabo de dejar el flatbed en el yard de Tucson.", "label": "speak", "cls": "A", "variant": "clean+noctx", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "¿A quién le llamo cuando llegue a la", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es3911128978"}
+{"context": "", "text": "acabo de pasar atlanta", "label": "speak", "cls": "H", "variant": "asr", "lang": "es", "tpl": "es743136234"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "Acabo de dejar la caja seca en el yard de Stockton.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es45455985"}
+{"context": "Agent: ¿Dónde anda ahorita?", "text": "como a una hora de bakersfield", "label": "speak", "cls": "H", "variant": "asr", "lang": "es", "tpl": "es1423503338"}
+{"context": "Agent: ¿Cuál es su ubicación actual?", "text": "Acabo de pasar Atlanta.", "label": "speak", "cls": "H", "variant": "clean", "lang": "es", "tpl": "es743136234"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "Llamo para confirmar la recogida de la carga tres ocho seis el jueves", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "llamo para confirmar la recogida", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es2156275368"}
+{"context": "", "text": "voy llegando a tucson como", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es2406090549"}
+{"context": "", "text": "llamo para confirmar la recogida de la carga nueve uno tres el mediodía", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2156275368"}
+{"context": "", "text": "Voy llegando a Tucson como a las ocho de la mañana.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es2406090549"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "llamo para confirmar la recogida de la carga tres ocho seis mañana temprano", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "mi troca está vacía y ando buscando carga saliendo de mcallen", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es140302815"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "Llamo para confirmar la recogida de", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: ¿Dónde anda ahorita?", "text": "Acabo de pasar Laredo.", "label": "speak", "cls": "H", "variant": "clean", "lang": "es", "tpl": "es743136234"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "acabo de dejar el reefer en el yard de mcallen", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "¿Qué tan lejos queda el yard de Bakersfield?", "label": "speak", "cls": "B", "variant": "clean", "lang": "es", "tpl": "es1442818046"}
+{"context": "Agent: Su check call quedó para mañana temprano.", "text": "Simón.", "label": "speak", "cls": "C", "variant": "clean", "lang": "es", "tpl": "es1161857917"}
+{"context": "", "text": "entonces, digo, sobre la entrega, o sea", "label": "wait", "cls": "E", "variant": "asr", "lang": "es", "tpl": "es1091844419"}
+{"context": "Agent: ¿Cuál es su ubicación actual?", "text": "acabo de pasar atlanta", "label": "speak", "cls": "H", "variant": "asr", "lang": "es", "tpl": "es743136234"}
+{"context": "", "text": "llamo para confirmar la recogida de la carga cuatro siete dos las seis de la tarde", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: ¿A qué número le regreso la llamada?", "text": "Me puede marcar al nueve cero uno", "label": "wait", "cls": "F", "variant": "clean", "lang": "es", "tpl": "es1986533291"}
+{"context": "", "text": "a quién le llamo cuando llegue a la", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es3911128978"}
+{"context": "Agent: ¿Me da su número de MC?", "text": "Sí, es nueve cero uno", "label": "wait", "cls": "F", "variant": "clean", "lang": "es", "tpl": "es1533399527"}
+{"context": "Agent: Su check call quedó para las ocho de la mañana.", "text": "enterado", "label": "speak", "cls": "C", "variant": "asr", "lang": "es", "tpl": "es2258022444"}
+{"context": "", "text": "acabo de dejar la troca en el yard de fontana", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "Llamo para confirmar la recogida de la carga tres ocho seis el jueves", "label": "wait", "cls": "T", "variant": "clean+noctx", "lang": "es", "tpl": "es2156275368"}
+{"context": "", "text": "voy llegando a denver como a el jueves en la mañana", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2406090549"}
+{"context": "", "text": "Voy llegando a Reno como a las seis de", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es2406090549"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "Llamo para confirmar la recogida de la carga nueve uno tres el mediodía.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "Mi troca está vacía y ando buscando carga saliendo de Tucson.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es140302815"}
+{"context": "", "text": "voy llegando a fontana como a las tres y media", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2406090549"}
+{"context": "", "text": "Acabo de dejar el reefer en el yard de McAllen.", "label": "speak", "cls": "A", "variant": "clean+noctx", "lang": "es", "tpl": "es45455985"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "Ya voy cargado saliendo de Fontana ahorita.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es2335426890"}
+{"context": "", "text": "voy llegando a denver como", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es2406090549"}
+{"context": "", "text": "sí pues, pues, lo que pasa es que, como que", "label": "wait", "cls": "E", "variant": "asr", "lang": "es", "tpl": "es2489309654"}
+{"context": "Agent: Su check call quedó para mañana temprano.", "text": "simón", "label": "speak", "cls": "C", "variant": "asr", "lang": "es", "tpl": "es1161857917"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "acabo de dejar el flatbed en el yard de tucson", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "Sí pues, pues, lo que pasa es que, como que", "label": "wait", "cls": "E", "variant": "clean", "lang": "es", "tpl": "es2489309654"}
+{"context": "", "text": "agarro la carga de tucson, supongo", "label": "speak", "cls": "I", "variant": "asr", "lang": "es", "tpl": "es15539600"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "llamo para confirmar la recogida de la carga nueve", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es2156275368"}
+{"context": "", "text": "Ya voy cargado saliendo de McAllen ahorita.", "label": "speak", "cls": "A", "variant": "clean+noctx", "lang": "es", "tpl": "es2335426890"}
+{"context": "Agent: Su check call quedó para las cinco.", "text": "perfecto, gracias", "label": "speak", "cls": "C", "variant": "asr", "lang": "es", "tpl": "es2950116902"}
+{"context": "", "text": "acabo de dejar el tráiler seis dos en el yard", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "sí pues, como que, lo que pasa es que, pues", "label": "wait", "cls": "E", "variant": "asr", "lang": "es", "tpl": "es2489309654"}
+{"context": "", "text": "Entonces, como que, sobre la entrega, este", "label": "wait", "cls": "E", "variant": "clean", "lang": "es", "tpl": "es1091844419"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "ya voy cargado saliendo de mcallen ahorita", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2335426890"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "mi troca está vacía y ando buscando", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es140302815"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "el flatbed va jalando bien y voy", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es2913222531"}
+{"context": "", "text": "Ya le mandé la rate", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es3471953317"}
+{"context": "", "text": "acabo de dejar la caja seca en el yard de stockton", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "voy llegando a fontana como a", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es2406090549"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "Mi troca está vacía y ando buscando", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es140302815"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "Mi troca está vacía y ando buscando carga saliendo de El Paso.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es140302815"}
+{"context": "Agent: ¿Me da su número de MC?", "text": "sí, es nueve cero uno", "label": "wait", "cls": "F", "variant": "asr", "lang": "es", "tpl": "es1533399527"}
+{"context": "", "text": "llamo para confirmar la recogida de la carga nueve", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "Mi troca está vacía y ando buscando carga saliendo de McAllen.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es140302815"}
+{"context": "Agent: ¿Le funciona el horario de las seis de la tarde?", "text": "me funciona", "label": "speak", "cls": "H", "variant": "asr", "lang": "es", "tpl": "es821634855"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "Acabo de dejar el tráiler seis dos en el yard de Fresno.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "agarro la carga de phoenix, supongo", "label": "speak", "cls": "I", "variant": "asr", "lang": "es", "tpl": "es15539600"}
+{"context": "", "text": "Acabo de dejar la troca en el yard de", "label": "wait", "cls": "T", "variant": "clean+noctx", "lang": "es", "tpl": "es45455985"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "Llamo para confirmar la recogida de la carga tres ocho seis mañana temprano.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: Su check call quedó para mañana temprano.", "text": "va", "label": "speak", "cls": "C", "variant": "asr", "lang": "es", "tpl": "es926997561"}
+{"context": "Agent: ¿Alcanza a llegar a la cita de mañana temprano?", "text": "Me funciona.", "label": "speak", "cls": "H", "variant": "clean", "lang": "es", "tpl": "es821634855"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "acabo de dejar la troca en el yard de fontana", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es45455985"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "Acabo de dejar la troca en el yard de", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es45455985"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "mi troca está vacía y ando buscando carga saliendo de", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es140302815"}
+{"context": "", "text": "voy llegando a reno como a las seis de", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es2406090549"}
+{"context": "", "text": "Agarro la carga de Phoenix, supongo.", "label": "speak", "cls": "I", "variant": "clean", "lang": "es", "tpl": "es15539600"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "Acabo de dejar el reefer en el yard de Reno.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "Agarro la carga de Tucson, supongo.", "label": "speak", "cls": "I", "variant": "clean", "lang": "es", "tpl": "es15539600"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "Llamo para confirmar la recogida de la carga ocho uno cinco las cinco.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "Recogí la carga en el cross-dock", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es2124459820"}
+{"context": "", "text": "acabo de dejar la troca en el yard de", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "Sí pues, como que, lo que pasa es que, pues", "label": "wait", "cls": "E", "variant": "clean", "lang": "es", "tpl": "es2489309654"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "ya voy cargado saliendo de fontana ahorita", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2335426890"}
+{"context": "", "text": "Entonces, digo, sobre la entrega, o sea", "label": "wait", "cls": "E", "variant": "clean", "lang": "es", "tpl": "es1091844419"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "acabo de dejar el tráiler seis dos en el yard de fresno", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "bueno, digo, es como, digo", "label": "wait", "cls": "E", "variant": "asr", "lang": "es", "tpl": "es360476280"}
+{"context": "Agent: Su check call quedó para las cinco.", "text": "Perfecto, gracias.", "label": "speak", "cls": "C", "variant": "clean", "lang": "es", "tpl": "es2950116902"}
+{"context": "", "text": "entonces, como que, sobre la entrega, este", "label": "wait", "cls": "E", "variant": "asr", "lang": "es", "tpl": "es1091844419"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "acabo de dejar el reefer en el yard", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "voy llegando a tucson como a el mediodía", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2406090549"}
+{"context": "Agent: Su check call quedó para mañana temprano.", "text": "Va.", "label": "speak", "cls": "C", "variant": "clean", "lang": "es", "tpl": "es926997561"}
+{"context": "", "text": "Llamo para confirmar la recogida de la carga nueve uno tres el mediodía.", "label": "speak", "cls": "A", "variant": "clean+noctx", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "la troca va jalando bien y voy", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es2913222531"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "Llamo para confirmar la recogida de la carga nueve uno tres el mediodía.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "llamo para confirmar la recogida de la carga nueve uno tres el mediodía", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: ¿Dónde anda ahorita?", "text": "Como a una hora de Bakersfield.", "label": "speak", "cls": "H", "variant": "clean", "lang": "es", "tpl": "es1423503338"}
+{"context": "Agent: ¿Dónde anda ahorita?", "text": "acabo de pasar laredo", "label": "speak", "cls": "H", "variant": "asr", "lang": "es", "tpl": "es743136234"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "llamo para confirmar la recogida de la carga ocho uno cinco las cinco", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "acabo de dejar el reefer en el yard de reno", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "Acabo de dejar el reefer en el yard de Reno.", "label": "speak", "cls": "A", "variant": "clean+noctx", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "llamo para confirmar la recogida de la carga seis cuatro cero las ocho de la mañana", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2156275368"}
+{"context": "", "text": "Sí pues, digo, lo que pasa es que, o sea", "label": "wait", "cls": "E", "variant": "clean", "lang": "es", "tpl": "es2489309654"}
+{"context": "Agent: El dock cierra hoy a el jueves en la mañana.", "text": "va", "label": "speak", "cls": "C", "variant": "asr", "lang": "es", "tpl": "es926997561"}
+{"context": "", "text": "¿Puedo recoger antes si llego antes de las ocho", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es427075461"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "mi troca está vacía y ando buscando carga saliendo de el paso", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es140302815"}
+{"context": "", "text": "Voy llegando a Fontana como", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es2406090549"}
+{"context": "", "text": "bueno, este, es como, este", "label": "wait", "cls": "E", "variant": "asr", "lang": "es", "tpl": "es360476280"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "Acabo de dejar el reefer en el yard", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "llamo para confirmar la recogida de la carga tres ocho seis mañana temprano", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2156275368"}
+{"context": "", "text": "Ya le mandé el recibo del lumper a", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es3471953317"}
+{"context": "", "text": "cuánto paga esa carga saliendo de fresno", "label": "speak", "cls": "B", "variant": "asr", "lang": "es", "tpl": "es18471777"}
+{"context": "", "text": "¿Cuánto paga esa carga saliendo de Fresno?", "label": "speak", "cls": "B", "variant": "clean", "lang": "es", "tpl": "es18471777"}
+{"context": "Agent: ¿Le funciona el horario de las seis de la tarde?", "text": "Me funciona.", "label": "speak", "cls": "H", "variant": "clean", "lang": "es", "tpl": "es821634855"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "llamo para confirmar la recogida de la carga tres ocho seis el jueves en la mañana", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2156275368"}
+{"context": "", "text": "voy llegando a fontana como", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es2406090549"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "mi troca está vacía y ando buscando carga saliendo de fontana", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es140302815"}
+{"context": "", "text": "Bueno, digo, es como, digo", "label": "wait", "cls": "E", "variant": "clean", "lang": "es", "tpl": "es360476280"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "mi troca está vacía y ando buscando carga saliendo de tucson", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es140302815"}
+{"context": "", "text": "Voy llegando a Fontana como a", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es2406090549"}
+{"context": "", "text": "Acabo de dejar el tráiler seis dos en el yard", "label": "wait", "cls": "T", "variant": "clean+noctx", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "Voy llegando a Denver como", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es2406090549"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "Acabo de dejar el tráiler seis dos en el yard", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es45455985"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "la caja seca va jalando", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es2913222531"}
+{"context": "", "text": "Voy llegando a Tucson como", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es2406090549"}
+{"context": "Agent: ¿A qué número le regreso la llamada?", "text": "me puede marcar al nueve cero uno", "label": "wait", "cls": "F", "variant": "asr", "lang": "es", "tpl": "es1986533291"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "llamo para confirmar la recogida de la carga cuatro siete dos las seis de la tarde", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2156275368"}
+{"context": "", "text": "Bueno, este, es como, este", "label": "wait", "cls": "E", "variant": "clean", "lang": "es", "tpl": "es360476280"}
+{"context": "", "text": "acabo de dejar el reefer en el yard de mcallen", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "después de entregar en fresno pensaba", "label": "wait", "cls": "D", "variant": "asr", "lang": "es", "tpl": "es3597333098"}
+{"context": "", "text": "qué tan lejos queda el yard de bakersfield", "label": "speak", "cls": "B", "variant": "asr", "lang": "es", "tpl": "es1442818046"}
+{"context": "Agent: ¿Cuál es su MC?", "text": "sí, es cuatro uno cinco, cinco cinco", "label": "wait", "cls": "F", "variant": "asr", "lang": "es", "tpl": "es1533399527"}
+{"context": "Agent: El dock cierra hoy a el jueves en la mañana.", "text": "Va.", "label": "speak", "cls": "C", "variant": "clean", "lang": "es", "tpl": "es926997561"}
+{"context": "", "text": "Recogí la carga en el cross-dock", "label": "wait", "cls": "T", "variant": "clean+noctx", "lang": "es", "tpl": "es2124459820"}
+{"context": "", "text": "Llamo para confirmar la recogida de la carga cuatro siete dos las seis de la tarde.", "label": "speak", "cls": "A", "variant": "clean+noctx", "lang": "es", "tpl": "es2156275368"}
+{"context": "", "text": "voy llegando a fontana como a el mediodía", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2406090549"}
+{"context": "", "text": "llamo para confirmar la recogida de la carga tres ocho seis el jueves", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es2156275368"}
+{"context": "", "text": "Voy llegando a Fontana como a el mediodía.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es2406090549"}
+{"context": "", "text": "ya le mandé el bol", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es3471953317"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "llamo para confirmar la recogida de", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "Llamo para confirmar la recogida de la carga cuatro siete dos las seis de la tarde.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "Llamo para confirmar la recogida de la carga tres ocho seis el jueves en la mañana.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "Llamo para confirmar la recogida de la carga nueve", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es2156275368"}
+{"context": "", "text": "¿Me puede mandar el BOL", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es1808084247"}
+{"context": "Agent: ¿A qué número le regreso la llamada?", "text": "Mi celular es seis dos, ocho ocho", "label": "wait", "cls": "F", "variant": "clean", "lang": "es", "tpl": "es78597180"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "Mi troca está vacía y ando buscando carga saliendo de Fontana.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es140302815"}
+{"context": "", "text": "sí pues, digo, lo que pasa es que, o sea", "label": "wait", "cls": "E", "variant": "asr", "lang": "es", "tpl": "es2489309654"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "Llamo para confirmar la recogida de la carga seis cuatro cero las ocho de la mañana.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es2156275368"}
+{"context": "", "text": "acabo de dejar el flatbed en el yard de tucson", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "voy llegando a tucson como a las ocho de la mañana", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2406090549"}
+{"context": "", "text": "qué tan lejos queda el receiver de el paso", "label": "speak", "cls": "B", "variant": "asr", "lang": "es", "tpl": "es1442818046"}
+{"context": "", "text": "entonces, este, sobre la entrega, eh", "label": "wait", "cls": "E", "variant": "asr", "lang": "es", "tpl": "es1091844419"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "llamo para confirmar la recogida de la carga nueve uno tres el mediodía", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "Mi troca está vacía y ando buscando carga saliendo de", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es140302815"}
+{"context": "", "text": "Acabo de dejar la caja seca en el yard de Stockton.", "label": "speak", "cls": "A", "variant": "clean+noctx", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "¿Qué tan lejos queda el receiver de El Paso?", "label": "speak", "cls": "B", "variant": "clean", "lang": "es", "tpl": "es1442818046"}
+{"context": "Agent: Su check call quedó para las ocho de la mañana.", "text": "Enterado.", "label": "speak", "cls": "C", "variant": "clean", "lang": "es", "tpl": "es2258022444"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "acabo de dejar la caja seca en el yard de stockton", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es45455985"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "Acabo de dejar el flatbed en el yard de Tucson.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es45455985"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "Llamo para confirmar la recogida", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "Ya voy cargado saliendo de McAllen ahorita.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es2335426890"}
+{"context": "", "text": "Llamo para confirmar la recogida de la carga tres ocho seis mañana temprano.", "label": "speak", "cls": "A", "variant": "clean+noctx", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "acabo de dejar el tráiler seis dos en el yard", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es45455985"}
+{"context": "Agent: ¿Cuál es su MC?", "text": "Sí, es cuatro uno cinco, cinco cinco", "label": "wait", "cls": "F", "variant": "clean", "lang": "es", "tpl": "es1533399527"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "llamo para confirmar la recogida de la carga tres ocho seis el jueves", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es2156275368"}
+{"context": "", "text": "me puede mandar el bol", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es1808084247"}
+{"context": "", "text": "Entonces, este, sobre la entrega, eh", "label": "wait", "cls": "E", "variant": "clean", "lang": "es", "tpl": "es1091844419"}
+{"context": "", "text": "ya le mandé la rate", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es3471953317"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "Acabo de dejar el reefer en el yard de McAllen.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "Llamo para confirmar la recogida de la carga nueve", "label": "wait", "cls": "T", "variant": "clean+noctx", "lang": "es", "tpl": "es2156275368"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "recogí la carga en el cross-dock", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es2124459820"}
+{"context": "Agent: ¿Alcanza a llegar a la cita de mañana temprano?", "text": "me funciona", "label": "speak", "cls": "H", "variant": "asr", "lang": "es", "tpl": "es821634855"}
+{"context": "", "text": "Ya le mandé el BOL", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es3471953317"}
+{"context": "", "text": "Después de entregar en Fresno pensaba", "label": "wait", "cls": "D", "variant": "clean", "lang": "es", "tpl": "es3597333098"}
+{"context": "", "text": "ya entregué en el dock cuatro hace", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es1114459827"}
+{"context": "", "text": "Voy llegando a Fontana como a las tres y media.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es2406090549"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "acabo de dejar la troca en el yard de", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "¿Qué tan lejos queda el shipper de Denver?", "label": "speak", "cls": "B", "variant": "clean", "lang": "es", "tpl": "es1442818046"}
+{"context": "", "text": "Ya entregué en el dock cuatro hace", "label": "wait", "cls": "T", "variant": "clean", "lang": "es", "tpl": "es1114459827"}
+{"context": "", "text": "puedo recoger antes si llego antes de las ocho", "label": "wait", "cls": "T", "variant": "asr", "lang": "es", "tpl": "es427075461"}
+{"context": "Agent: Dispatch, ¿en qué le puedo ayudar?", "text": "llamo para confirmar la recogida de la carga seis cuatro cero las ocho de la mañana", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2156275368"}
+{"context": "", "text": "Llamo para confirmar la recogida de la carga seis cuatro cero las ocho de la mañana.", "label": "speak", "cls": "A", "variant": "clean+noctx", "lang": "es", "tpl": "es2156275368"}
+{"context": "", "text": "Acabo de dejar la troca en el yard de Fontana.", "label": "speak", "cls": "A", "variant": "clean+noctx", "lang": "es", "tpl": "es45455985"}
+{"context": "Agent: Habla dispatch, dígame.", "text": "Acabo de dejar la troca en el yard de Fontana.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "Voy llegando a Denver como a el jueves en la mañana.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es2406090549"}
+{"context": "", "text": "voy llegando a reno como a las seis de la tarde", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es2406090549"}
+{"context": "", "text": "acabo de dejar el reefer en el yard de reno", "label": "speak", "cls": "A", "variant": "asr", "lang": "es", "tpl": "es45455985"}
+{"context": "", "text": "Voy llegando a Reno como a las seis de la tarde.", "label": "speak", "cls": "A", "variant": "clean", "lang": "es", "tpl": "es2406090549"}

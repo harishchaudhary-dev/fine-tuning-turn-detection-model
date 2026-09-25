@@ -1,0 +1,8 @@
+{
+  "threshold": 0.79,
+  "cost_ratio": 5,
+  "method": "cost-optimal with tier-1 guardrail constraints",
+  "selection_source": "data/dev_set.json",
+  "dev_n": 30,
+  "admissible_count": 60
+}

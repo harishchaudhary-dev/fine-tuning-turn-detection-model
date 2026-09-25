@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test/cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Private/raw data
+data/raw/
+data/private/
+data/real_calls/
+
+# Audio
+*.wav
+*.mp3
+*.m4a
+
+# Temporary files
+tmp/
+temp/
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Model training artifacts
+checkpoints/
+runs/
+wandb/
+
+# Local secrets
+secrets/

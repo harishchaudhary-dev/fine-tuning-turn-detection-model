@@ -1,0 +1,10 @@
+torch
+transformers
+scikit-learn
+numpy
+fastapi
+uvicorn[standard]
+onnxruntime
+optimum[onnxruntime]
+httpx
+pydantic

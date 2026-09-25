@@ -1,0 +1,431 @@
+{
+ "version": 1,
+ "frozen": "2026-08-24",
+ "labeler": "james",
+ "note": "FROZEN gold calibration set. Never used in training. hard = speak/wait graded strictly; unsure = boundary cases, excluded from hard accuracy, model should sit near threshold there.",
+ "cost_ratio": 5,
+ "speak_threshold": 0.8333,
+ "policy_notes": "Policy carried over from my production voice stack (learned on a real 8 kHz phone line): Never interrupt a data readout (numbers, spellings, addresses), the pause between digits can run long and the agent still waits. A bare acknowledgement (\"thanks\", \"okay got it\") is a complete turn, speak, but turn-complete never means call-over; on telephony audio \"thanks\" and \"next\" collide and a misheard \"thanks\" once ended a live call, so ending is a separate explicit decision. When the caller asks for time (\"hang on, let me check\"), patience extends well past the normal window, then check in gently instead of answering. Hedges are usually handoffs, \"I guess that's all\" means it's my turn; respond and let barge-in recovery cover the miss. A complete statement that answers my question gets an immediate response; one that opens a new topic gets a beat of grace. Self-interrupts (\"book me on the- wait\") get extended patience, a new thought is coming. Where costs are asymmetric, prefer absolute rules over conditional ones; every conditional version of my hang-up rule measured worse in production than the absolute one.",
+ "samples": [
+  {
+   "id": "A1",
+   "cls": "A",
+   "context": "Agent: Dispatch, how can I help?",
+   "text": "Hey, I'm calling to confirm the pickup for load four seven two tomorrow morning.",
+   "label": "speak"
+  },
+  {
+   "id": "A2",
+   "cls": "A",
+   "context": "",
+   "text": "I just dropped the trailer at the Fontana yard.",
+   "label": "speak"
+  },
+  {
+   "id": "A3",
+   "cls": "A",
+   "context": "Agent: Anything else I can help with?",
+   "text": "No, that covers everything for today.",
+   "label": "speak"
+  },
+  {
+   "id": "A4",
+   "cls": "A",
+   "context": "",
+   "text": "The reefer unit is reading thirty four degrees and everything looks good.",
+   "label": "unsure"
+  },
+  {
+   "id": "B1",
+   "cls": "B",
+   "context": "",
+   "text": "What's the detention policy if I'm stuck at the dock past two hours?",
+   "label": "speak"
+  },
+  {
+   "id": "B2",
+   "cls": "B",
+   "context": "",
+   "text": "Can you send me the rate confirmation again?",
+   "label": "speak"
+  },
+  {
+   "id": "B3",
+   "cls": "B",
+   "context": "",
+   "text": "How far is the receiver from where I am right now?",
+   "label": "speak"
+  },
+  {
+   "id": "B4",
+   "cls": "B",
+   "context": "",
+   "text": "Do I need a lumper receipt for this one?",
+   "label": "speak"
+  },
+  {
+   "id": "C1",
+   "cls": "C",
+   "context": "Agent: The dock closes at six pm today.",
+   "text": "Okay, got it.",
+   "label": "speak"
+  },
+  {
+   "id": "C2",
+   "cls": "C",
+   "context": "Agent: I'll email you the updated BOL.",
+   "text": "Perfect, thanks.",
+   "label": "speak"
+  },
+  {
+   "id": "C3",
+   "cls": "C",
+   "context": "Agent: Your check call is set for noon.",
+   "text": "Sounds good.",
+   "label": "speak"
+  },
+  {
+   "id": "C4",
+   "cls": "C",
+   "context": "Agent: Rate is eighteen fifty all in.",
+   "text": "Alright.",
+   "label": "speak"
+  },
+  {
+   "id": "D1",
+   "cls": "D",
+   "context": "",
+   "text": "I'm about twenty miles out but the traffic on the ten is...",
+   "label": "unsure"
+  },
+  {
+   "id": "D2",
+   "cls": "D",
+   "context": "",
+   "text": "Can you tell the receiver that my ETA is now...",
+   "label": "wait"
+  },
+  {
+   "id": "D3",
+   "cls": "D",
+   "context": "",
+   "text": "The main issue with that lane is the...",
+   "label": "wait"
+  },
+  {
+   "id": "D4",
+   "cls": "D",
+   "context": "",
+   "text": "So after I deliver in Phoenix I was planning to...",
+   "label": "wait"
+  },
+  {
+   "id": "E1",
+   "cls": "E",
+   "context": "",
+   "text": "Yeah so, um, the thing is, uh...",
+   "label": "wait"
+  },
+  {
+   "id": "E2",
+   "cls": "E",
+   "context": "",
+   "text": "I wanted to ask about, like, um...",
+   "label": "wait"
+  },
+  {
+   "id": "E3",
+   "cls": "E",
+   "context": "",
+   "text": "Okay so basically, you know, I...",
+   "label": "wait"
+  },
+  {
+   "id": "E4",
+   "cls": "E",
+   "context": "",
+   "text": "Well, I mean, it's kind of, um...",
+   "label": "wait"
+  },
+  {
+   "id": "F1",
+   "cls": "F",
+   "context": "Agent: Can I get your MC number?",
+   "text": "Yeah, it's seven one five...",
+   "label": "wait"
+  },
+  {
+   "id": "F2",
+   "cls": "F",
+   "context": "Agent: What's the PO on that?",
+   "text": "PO is alpha bravo two two...",
+   "label": "wait"
+  },
+  {
+   "id": "F3",
+   "cls": "F",
+   "context": "Agent: Best callback number?",
+   "text": "You can reach me at four one five, five five...",
+   "label": "wait"
+  },
+  {
+   "id": "F4",
+   "cls": "F",
+   "context": "",
+   "text": "The trailer number ends in three, seven...",
+   "label": "wait"
+  },
+  {
+   "id": "G1",
+   "cls": "G",
+   "context": "",
+   "text": "I can pick up Thursday morning, but...",
+   "label": "wait"
+  },
+  {
+   "id": "G2",
+   "cls": "G",
+   "context": "",
+   "text": "The rate works for me, although...",
+   "label": "wait"
+  },
+  {
+   "id": "G3",
+   "cls": "G",
+   "context": "",
+   "text": "I'd normally take that load, except...",
+   "label": "wait"
+  },
+  {
+   "id": "G4",
+   "cls": "G",
+   "context": "",
+   "text": "We can do the drop trailer, and...",
+   "label": "wait"
+  },
+  {
+   "id": "H1",
+   "cls": "H",
+   "context": "Agent: Can you make the eight am appointment?",
+   "text": "Yeah, I can make it.",
+   "label": "speak"
+  },
+  {
+   "id": "H2",
+   "cls": "H",
+   "context": "Agent: I can do nineteen hundred on that lane.",
+   "text": "That rate works for me.",
+   "label": "speak"
+  },
+  {
+   "id": "H3",
+   "cls": "H",
+   "context": "Agent: Where are you now?",
+   "text": "Just passed Barstow.",
+   "label": "unsure"
+  },
+  {
+   "id": "H4",
+   "cls": "H",
+   "context": "",
+   "text": "Okay, I'll call the receiver myself.",
+   "label": "speak"
+  },
+  {
+   "id": "H5",
+   "cls": "H",
+   "context": "Agent: Anything else?",
+   "text": "Actually yeah, one more thing.",
+   "label": "wait"
+  },
+  {
+   "id": "H6",
+   "cls": "H",
+   "context": "",
+   "text": "I delivered the load about an hour ago.",
+   "label": "speak"
+  },
+  {
+   "id": "H7",
+   "cls": "H",
+   "context": "Agent: How did the inspection go?",
+   "text": "It went fine.",
+   "label": "speak"
+  },
+  {
+   "id": "H8",
+   "cls": "H",
+   "context": "",
+   "text": "Send the paperwork to my email.",
+   "label": "speak"
+  },
+  {
+   "id": "I1",
+   "cls": "I",
+   "context": "",
+   "text": "That's all I need, I guess...",
+   "label": "speak"
+  },
+  {
+   "id": "I2",
+   "cls": "I",
+   "context": "",
+   "text": "I could probably make it by three, maybe...",
+   "label": "speak"
+  },
+  {
+   "id": "I3",
+   "cls": "I",
+   "context": "",
+   "text": "The broker said it was covered, supposedly...",
+   "label": "speak"
+  },
+  {
+   "id": "I4",
+   "cls": "I",
+   "context": "",
+   "text": "We're good to go, I think...",
+   "label": "unsure"
+  },
+  {
+   "id": "I5",
+   "cls": "I",
+   "context": "",
+   "text": "That should work, probably...",
+   "label": "unsure"
+  },
+  {
+   "id": "I6",
+   "cls": "I",
+   "context": "",
+   "text": "I'll take the Denver load, I suppose...",
+   "label": "speak"
+  },
+  {
+   "id": "I7",
+   "cls": "I",
+   "context": "",
+   "text": "The detention was approved, or something...",
+   "label": "wait"
+  },
+  {
+   "id": "I8",
+   "cls": "I",
+   "context": "",
+   "text": "It's like eighteen hundred with the fuel surcharge, more or less...",
+   "label": "unsure"
+  },
+  {
+   "id": "J1",
+   "cls": "J",
+   "context": "",
+   "text": "Can you- actually, you know what...",
+   "label": "wait"
+  },
+  {
+   "id": "J2",
+   "cls": "J",
+   "context": "",
+   "text": "Book me on the- wait, hold on...",
+   "label": "wait"
+  },
+  {
+   "id": "J3",
+   "cls": "J",
+   "context": "",
+   "text": "I need the- no, scratch that...",
+   "label": "speak"
+  },
+  {
+   "id": "J4",
+   "cls": "J",
+   "context": "",
+   "text": "Tell them I'll be- hmm, let me rethink this...",
+   "label": "wait"
+  },
+  {
+   "id": "J5",
+   "cls": "J",
+   "context": "",
+   "text": "The pickup is at- sorry, I'm reading the wrong load...",
+   "label": "wait"
+  },
+  {
+   "id": "J6",
+   "cls": "J",
+   "context": "",
+   "text": "Set my check call for- actually...",
+   "label": "wait"
+  },
+  {
+   "id": "J7",
+   "cls": "J",
+   "context": "",
+   "text": "My ETA is- ugh, this GPS just rerouted...",
+   "label": "unsure"
+  },
+  {
+   "id": "J8",
+   "cls": "J",
+   "context": "",
+   "text": "I want to counter at- okay wait...",
+   "label": "wait"
+  },
+  {
+   "id": "K1",
+   "cls": "K",
+   "context": "",
+   "text": "Hang on, let me grab the load number...",
+   "label": "wait"
+  },
+  {
+   "id": "K2",
+   "cls": "K",
+   "context": "",
+   "text": "One sec, I'm pulling over so I can read it...",
+   "label": "speak"
+  },
+  {
+   "id": "K3",
+   "cls": "K",
+   "context": "",
+   "text": "Let me check my rate con real quick...",
+   "label": "wait"
+  },
+  {
+   "id": "K4",
+   "cls": "K",
+   "context": "",
+   "text": "Hold on, the receiver is waving at me...",
+   "label": "speak"
+  },
+  {
+   "id": "K5",
+   "cls": "K",
+   "context": "",
+   "text": "Give me a second to find the BOL...",
+   "label": "wait"
+  },
+  {
+   "id": "K6",
+   "cls": "K",
+   "context": "",
+   "text": "Wait, let me ask my dispatcher...",
+   "label": "speak"
+  },
+  {
+   "id": "K7",
+   "cls": "K",
+   "context": "",
+   "text": "Uh, let me look at my calendar...",
+   "label": "wait"
+  },
+  {
+   "id": "K8",
+   "cls": "K",
+   "context": "",
+   "text": "Hold that thought, I've got another call coming in...",
+   "label": "speak"
+  }
+ ]
+}
