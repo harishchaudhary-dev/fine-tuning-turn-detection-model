@@ -1,162 +1,1243 @@
-Turn Detection Model
-An end-of-turn detector for voice agents. Given the agent's last line and the caller's words so far, it decides whether the caller is done talking or still mid-turn.
+# End-of-Turn Detector
 
-Fine-tuned DistilBERT, shipped as int8, served at a picked operating threshold of 0.42.
+> A production-oriented end-of-turn detection service for voice agents, built around a fine-tuned DistilBERT classifier, ONNX INT8 inference, and FastAPI.
 
-Gold PR-AUC (60-card frozen set)	0.949
-Gold recall	0.654
-Held-out real calls (96 turns)	0.913 PR-AUC
-False-speak on real calls	11 / 47 wait turns (0.234)
-False-speak on gold wait cards	0 / 27
-End-to-end p95 latency (concurrency 8)	33.1 ms
-The finding this repo exists to report: the model is near-perfect on the frozen gold set and meaningfully worse on real calls. That gap — 0.949 → 0.913 PR-AUC, 0 → 11 false speaks — is the headline result, not a footnote. Read it as "this is what generalization actually costs," not as a bug to be hidden.
+[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![ONNX Runtime](https://img.shields.io/badge/ONNX%20Runtime-CPU-005CED?style=flat-square)](https://onnxruntime.ai/)
+[![Transformers](https://img.shields.io/badge/Hugging%20Face-Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/docs/transformers/)
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat-square)](LICENSE)
 
-Quickstart
-python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt
+---
 
-make synth        # regenerate the English training set (seeded, byte-identical)
-make tier1        # derive the twelve guardrail rows from the committed data
-make train         # fine-tune the DistilBERT lane, export ONNX + int8
-make threshold      # re-pick the operating point on the served int8 file, one row per call
-make eval          # score a model against the frozen gold set
-make serve         # FastAPI on :8000, with a live probe page at /
-make bench         # async stress test, latency percentiles + throughput
-make docker-build && make docker-run && make smoke   # int8 model in a container
-curl -s -X POST localhost:8000/predict -H "Content-Type: application/json" \
-  -d '{"context": "What is your MC number?", "text": "yeah it is four one five"}'
-Optional from-scratch lane (no pretrained weights, tokenizer trained from the corpus):
+## What this project does
 
-make corpus        # one-time, builds the scratch lane's data (pulls in `datasets`)
-make pretrain       # ~15 min, our own masked-language-model base
-make scratch        # fine-tune that base into the 7.36M from-scratch model
-What a clean clone actually gives you
-The synthetic data rebuilds byte-for-byte, and the eight probe cases on the / page reproduce wait / speak / wait exactly as documented.
-The numbers will differ — this is expected, not a bug. One clean retrain read 0.965 gold on its fp32 export and 0.966 on int8, and picked thresholds of 0.71 and 0.63 against the frozen 0.42. That's one set of weights scored through two execution paths, not run-to-run noise.
-Real-call data never leaves the author's machine. make train from a clone rebuilds the pre-augmentation fine-tune, which reads 0.65 on real calls where the shipped artifact reads 0.91. If you're auditing this repo, that 0.26-point gap is the real-call augmentation working as intended, not something withheld.
-Every number in this README describes the v9 freeze. Your box will train something adjacent to it, not identical.
-Why this exists: five hard problems
-#	Problem	Where this stack stands
-1	A complete sentence is not a complete turn. "Anything else?" → "actually yeah, one more thing." is grammatically finished and conversationally wide open.	Answered. Announced continuation is its own policy class and a tier-1 constraint. That exact card scores 0.035 and holds.
-2	The two failure modes cost differently. Talking over a caller and leaving the line hanging are not equally bad, so accuracy is the wrong objective.	Answered. A 1:5 cost ratio (false-speak : false-wait) picks the threshold — 0.42 — where the model never talks over any of the 27 gold wait cards, and talks over 11 of 47 on held-out real calls.
-3	There is no ground truth, only a policy. An unwritten label set is one person's ear.	Answered. POLICY.md came first; 60 cards were blind-labeled against it, and three vendor judge models hit 53/53 agreement.
-4	The model you measure is not the model you ship. Quantization moves scores near the threshold.	Answered, after two red iterations. One card read 0.26 on the fp32 checkpoint and 0.412 through the actual serving path. Threshold selection now scores one row at a time, the way serving does — not batched.
-5	Text has no prosody. Falling pitch and a trailing vowel never reach a transcript.	Not answerable here. This is a ceiling on the input, not a model defect. See Roadmap.
-Model comparison
-Every probe below is scored on the served int8 artifact, one row at a time — the way the API actually scores a call. The full 36-probe page lives in the repo; 35 are graded and one is a boundary card the policy itself calls unsure.
+Voice agents need to answer one deceptively difficult question:
 
-Fine-tuned DistilBERT (66.96M)	From-scratch (7.36M)
-Matches written policy (35 graded probes)	31/35	34/35
-Mean model latency	17.8 ms	2.9 ms
-Spanish probes (6)	0.770 mean, 3 wrong	All 6 correct
-English probes	28/35 (tied)	28/35 (tied)
-Both models share the same single English miss: an unpunctuated yes/no question. Latency is one run on one laptop and moves ~1 ms per regeneration — treat it as directional, not a benchmark claim.
+> **Has the caller finished speaking, or should the system keep listening?**
 
-The fine-tune ships despite losing the probe page, because probes are a fixed 36-card sample and the fine-tune leads where it matters: unseen real calls (0.91 vs. the from-scratch lane's numbers on the same slice). Pretraining data volume tracks directly with real-call PR-AUC: 0.48 random init → 0.60 with real calls added → 0.83 with a 15-minute pretrain → 0.91 web-pretrained.
+This project implements that decision as a text classification problem.
 
-How the operating point is chosen
-Sweep every threshold on the judged dev cards; keep the lowest cost, counted as 5 false speaks : 1 false wait.
-Discard any threshold that breaks one of twelve pinned tier-1 cards. If none survive, fail loud — don't silently relax a guardrail.
-Score the artifact the way it ships: int8, one row per call, not batched. The winner is written to threshold.json; serve.py reads it at startup.
-Threshold history (v1 → v9)
-This is a build log, not nine independently checkable results — each run overwrote the previous report, and only v9 regenerates from the committed artifact. The last three rows (v7–v9) share one set of weights; only the measuring instrument changed.
+Given:
 
-Run	Threshold	Gold PR-AUC	Gold recall	False-speak	ECE	Lesson
-v1	0.833	0.961	0.577	0.00	—	Textbook 5:1 bar assumes calibration; this model runs under-confident.
-v2	0.61	0.964	0.808	0.00	0.114	Picking on the measured curve moved recall.
-v3	0.87	0.970	0.654	0.00	0.067	Synthetic validation pushed the dial high; synthetic speech is easier than real speech.
-v4	0.86	0.969	0.654	0.00	0.070	Switching to rates instead of counts didn't fix it — the synthetic set itself was the problem.
-v5	0.81	0.958	0.731	0.00	0.092	A human typed "nah bye" and got wait. Casual speech joined the training set; regression file born.
-v6	0.18	0.955	0.654	0.037	0.169	Judged dev cards replaced synthetic validation; the dial collapsed and "one more thing" got interrupted.
-v7	0.27	0.949	0.654	0.00	0.160	Twelve cards became hard constraints. Green on fp32, red on the int8 that actually serves.
-v8	0.40	0.949	0.654	0.00	0.160	Re-picked on int8: 11/12 pinned cards. The picker was batching where serving scores one at a time.
-v9	0.42	0.949	0.654	0.00	0.160	Scored one card at a time, matching serving exactly: 12/12 pinned cards, real calls 0.913, recall 0.959.
-The v6→v9 arc is the part worth reading closely if you're building something similar: a threshold that's correct on a batched fp32 checkpoint can be wrong on the int8 artifact that actually serves traffic. Score the thing you ship, at the granularity you ship it.
+- the agent's previous utterance/context
+- the caller's current transcript
 
-Labeling: how the dev set was judged
-60 gold cards with known human answers were hidden among 30 fresh cards. Three stock vendor judge models, with no task-specific training, voted two-of-three majority. Judge output feeds exactly one file, which tunes exactly one number, clamped by twelve human-set gates — the judges pick a threshold, they don't touch the policy or the constraints.
+the service predicts:
 
-Blind, with one caveat: the policy spec quotes a few boundary examples, so certification was partially open-book, not fully blind.
-Full mechanics and raw votes: docs/judge-cascade-replay.md.
-The policy, as classes
-Sixty blind labels collapsed into eleven classes, each with a written rule. synth.py's template banks are the policy — the generator doesn't approximate the rules, it encodes them.
+```text
+SPEAK
 
-Class	Shape	Example	Decision
-A	Complete statement	"Hey, I'm calling to confirm the pickup for load four seven two tomorrow morning."	Speak
-B	Complete question	"What's the detention policy if I'm stuck at the dock past two hours?"	Speak
-C	Bare acknowledgement	"Okay, got it."	Speak — complete, but never treated as a call-ender
-D	Mid-clause cutoff	"Can you tell the receiver that my ETA is now…"	Wait
-E	Disfluent trail	"Yeah so, um, the thing is, uh…"	Wait
-F	Mid-data readout	"Yeah, it's seven one five…" (after "Can I get your MC number?")	Wait — absolute, however long the pause runs
-G	Connector-final	"I can pick up Thursday morning, but…"	Wait
-H	Complete, then maybe more	"Yeah, I can make it." speaks; "Actually yeah, one more thing." holds	Speak, unless continuation is announced
-I	Trailing hedge	"That's all I need, I guess…"	Speak by default; a decorative softener on an owned claim holds
-J	Self-interrupt / restart	"Can you- actually, you know what…" holds; "I need the- no, scratch that…" speaks	Wait; a full retraction may earn a brief acknowledgement
-K	Explicit hold	"Hang on, let me grab the load number…" holds; "Hold on, the receiver is waving at me…" speaks	Self-retrieval holds silently; a narrated outside interruption gets a courtesy ack
-Class I is the one I'd defend on a whiteboard. "The broker said it was covered, supposedly…" should speak; "The detention was approved, or something…" should wait. The rule is ownership, not hedging: an attributed claim is a question in disguise, an owned claim with a softener is just a statement, and attribution markers are surface features a model can actually learn to detect.
+or
 
-Known weak spots (judgment calls, not edge cases)
-Reported-speech hedges (class I): 1/5 scored hedge cards correct (0.20). Class I has 8 gold cards total, 3 of which the policy itself marks unsure.
-Explicit holds (class K): sits at ~50%.
-The bar for every judgment class is 0.60 recall; EVALS.md tracks both classes until they clear it. These are flagged here deliberately rather than smoothed over — don't ship a claim this repo can't back with a number.
-Data augmentation (why the training set isn't just the policy rules verbatim)
-Complete utterances are cut off mid-sentence and relabeled wait — the exact shape a live ASR partial arrives in.
-Everything ships lowercased, punctuation stripped, so nothing can cheat off a period.
-Contexted rows are also emitted bare, so the model works with or without the agent's last line.
-From v6 onward, real-call rows join training at 4× weight, grouped by call so no call leaks across the train/referee split.
-Dataset counts: 1,586 training rows · 60 gold cards · 30 judged dev cards · 6 regression cards · 400 real turns from 59 calls, split by call into 304/40 (train) and 96/19 (referee).
+WAIT
 
-Serving
-POST /predict — body {context, text} — returns {p_complete, decision, threshold, model_latency_ms}. ONNX Runtime, dynamic int8, CPU-only. The Docker image serves only the int8 artifact — there's no fp32 fallback in production.
+The model is a fine-tuned DistilBERT classifier exported to ONNX and quantized for CPU inference.
 
-Both rows below bench the same shipped int8 file, wall-clock time via bench.py. Two box states are quoted on purpose, because they disagree — the disagreement is about machine load, not model behavior.
+The production path is:
 
-Box state	C1 req/s (p95)	C8 req/s (p95)	Model p50 @ C8	Model p95 @ C8
-Idle (~4/18 cores loaded)	55 req/s, 20.7 ms	312 req/s, 33.1 ms	22.4 ms	30.4 ms
-Mid training load	28 req/s, 42.5 ms	170 req/s, 57.9 ms	39.5 ms	48.2 ms
-The headline 33.1 ms is the worst of four passes on the idle row. Even the degraded 57.9 ms — the same file, benched while a training job holds the box — clears a 100 ms budget with margin.
+Caller Speech
+     │
+     ▼
+   ASR
+     │
+     ▼
+Caller Transcript
+     │
+     ├───────────────┐
+     │               │
+     ▼               ▼
+Agent Context     Caller Text
+     │               │
+     └───────┬───────┘
+             ▼
+       Tokenization
+             │
+             ▼
+    DistilBERT ONNX INT8
+             │
+             ▼
+      Probability Score
+             │
+             ▼
+       Threshold Gate
+          /       \
+         /         \
+     SPEAK          WAIT
 
-Referees
-Three independent checks, each answering a different question:
+The goal is not simply to maximize classification accuracy.
 
-Frozen 60-card gold set — generalization against the written policy.
-6 probe-found regressions — memory; does a fix stay fixed.
-96 held-out real-call turns — discovery; what actually breaks in production.
-Real-call files, and every report/model directory except the two committed ones, stay out of git — no real-call number regenerates from a clone. The gold, regression, pinned-card, threshold, and judge numbers all do regenerate, for both the shipped int8 lane and the committed 7.36M from-scratch lane.
+The real engineering problem is deciding when the agent should take the conversational floor without talking over the caller.
 
-The threshold itself is not a hand-picked constant — it's a dial the measured cost curve turns, using a written cost ratio, scored on the exact artifact that ships.
+Why end-of-turn detection is difficult
 
-Repo map
-synth.py                  policy-driven English generator (template banks ARE the policy)
-synth_scale.py             same templates, larger slot pools, ~10x volume
-synth_es.py                Spanish banks under the same policy, Spanglish register included
-ood_from_elevenlabs.py     real-call eval slice builder (self-labeling turns; local only)
-train.py                   fine-tune lane (DistilBERT or any HF encoder via --base)
-train_scratch.py           from-scratch lane: byte-level BPE tokenizer + small encoder
-pretrain_scratch.py        masked-language-model pretraining for the from-scratch lane
-fetch_pretrain_corpus.py   license-clean bilingual Wikipedia slices for scratch pretrain
-evaluate.py                gold-set and jsonl evaluation: sweeps, classes, calibration, stability
-pick_threshold.py          dev-set threshold selection under tier-1 guardrails, scored single-row on the served artifact
-serve.py                   FastAPI serving over ONNX int8, plus the live probe page
-bench.py                   async stress harness, stepped concurrency
-probe_compare.py           side-by-side probe page for two served models (docs/probe-comparison.html)
-judge_cascade_replay.py    replays the dev-set labeling panel two ways over recorded votes, checks labels match
-draw_figures.py            emits every figure from counted constants; --check fails CI on drift or a font under the 75% floor
-labeling-booth.html        the calibration booth the gold set was labeled in
-assets/                    figures and the eight probe clips
-data/                      gold set (frozen), generated training sets, judge votes, dataset card
-docs/                      approach doc, judge replay, probe page, video script
-Depth documents, next to the code:
+A transcript can look complete while the caller is still speaking.
 
-docs/approach.md — the full write-up
-POLICY.md — the label rules
-EVALS.md — live tracking of the two judgment classes below bar
-iterations.md — the v1–v9 history in full
-data/README.md — dataset card
-Honest limitations
-Text has no prosody. Falling pitch, trailing vowels, and breath patterns never reach a transcript. This is the model's real ceiling, not something more training data fixes — see Roadmap for the audio-path options under consideration.
-Reported-speech hedges and explicit holds are still below the 0.60 bar (see Known weak spots above). Don't treat this repo as claiming those classes are solved.
-Real-call numbers are not independently reproducible from a clone by design — the calling data is private. Treat the gold-set and regression numbers as the reproducible ground truth, and the real-call numbers as reported, audited results.
-Latency figures are single-machine, wall-clock, and will vary with hardware — treat them as directional.
+Consider:
+
+Agent:
+"Is there anything else I can help you with?"
+
+Caller:
+"Actually yeah, one more thing..."
+
+Grammatically, the sentence is complete.
+
+Conversationally, the caller is not finished.
+
+The detector therefore needs to reason about more than punctuation or sentence completion.
+
+Important cases include:
+
+Scenario	Example	Decision
+Complete statement	"Yes, I can make it tomorrow."	SPEAK
+Complete question	"Can you send me the confirmation?"	SPEAK
+Acknowledgement	"Okay, got it."	SPEAK
+Mid-clause	"I wanted to ask about..."	WAIT
+Disfluent continuation	"Yeah so, um, the thing is..."	WAIT
+Data readout	"It's four one five..."	WAIT
+Connector-final	"I can come Thursday, but..."	WAIT
+Announced continuation	"Actually, one more thing..."	WAIT
+Self-interruption	"Can you... actually, you know what..."	WAIT
+Explicit hold	"Hang on, let me check..."	WAIT
+
+This is why the system is designed around conversation policy, not only sentence completion.
+
+Architecture
+                       ┌─────────────────────────┐
+                       │       Voice Agent       │
+                       └────────────┬────────────┘
+                                    │
+                              Agent Context
+                                    │
+                                    ▼
+┌───────────────┐          ┌──────────────────────┐
+│      ASR      │─────────▶│   FastAPI /predict   │
+└───────┬───────┘          └──────────┬───────────┘
+        │                             │
+        │ Caller text                 ▼
+        │                    ┌────────────────────┐
+        └───────────────────▶│ Hugging Face       │
+                             │ Tokenizer          │
+                             └─────────┬──────────┘
+                                       │
+                                       ▼
+                             ┌────────────────────┐
+                             │ DistilBERT ONNX    │
+                             │ INT8 CPU           │
+                             └─────────┬──────────┘
+                                       │
+                                       ▼
+                             ┌────────────────────┐
+                             │ Probability        │
+                             │ + Threshold        │
+                             └─────────┬──────────┘
+                                       │
+                         ┌─────────────┴─────────────┐
+                         ▼                           ▼
+                    SPEAK NOW                  KEEP LISTENING
+Engineering goals
+
+The project is designed around several production concerns.
+
+1. Low-latency CPU inference
+
+The model is exported to ONNX and quantized to INT8 so the inference service does not require a GPU.
+
+2. Reproducible serving
+
+The model evaluated during deployment should be the same artifact used by the API.
+
+Training
+   ↓
+Checkpoint
+   ↓
+ONNX export
+   ↓
+INT8 quantization
+   ↓
+Serving artifact
+   ↓
+Evaluation
+   ↓
+Production
+3. Explicit decision threshold
+
+The API does not blindly use 0.5.
+
+Instead:
+
+p_complete >= threshold
+        │
+        ├── yes ──▶ SPEAK
+        │
+        └── no ───▶ WAIT
+
+The threshold is configurable through:
+
+EOT_THRESHOLD
+
+If the environment variable is not supplied, the service loads the threshold associated with the model artifact.
+
+4. Serving-path correctness
+
+A common ML deployment mistake is evaluating one model representation and serving another.
+
+For example:
+
+FP32 checkpoint
+      ↓
+evaluation
+      ↓
+good score
+
+while production actually runs:
+
+INT8 ONNX
+      ↓
+different numerical behavior
+      ↓
+different score
+
+This project explicitly evaluates the ONNX serving path.
+
+Model
+
+The current inference model is based on:
+
+DistilBERT
+    ↓
+Fine-tuning
+    ↓
+ONNX export
+    ↓
+INT8 quantization
+    ↓
+ONNX Runtime
+
+The model directory is expected at:
+
+models/
+└── eot-distilbert-onnx-int8/
+    ├── model.onnx
+    ├── tokenizer.json
+    ├── tokenizer_config.json
+    ├── config.json
+    └── ...
+
+The exact model architecture and tokenizer configuration are loaded from the model artifact rather than being hard-coded into the API.
+
+Important implementation detail: ONNX tensor dtypes
+
+One of the deployment issues addressed in this project is the mismatch between tokenizer output types and ONNX input types.
+
+For example, a tokenizer may produce:
+
+int32
+
+while an ONNX graph expects:
+
+int64
+
+Passing the wrong tensor dtype can result in an inference failure such as:
+
+Unexpected input data type.
+Actual: tensor(int32)
+Expected: tensor(int64)
+
+The serving layer therefore inspects the ONNX input metadata and prepares tensors using the expected types.
+
+Conceptually:
+
+onnx_inputs = {
+    name: value.astype(np.int64)
+    for name, value in encoded.items()
+    if name in INPUT_NAMES
+}
+
+This is important because the inference service must respect the deployed model contract rather than assuming that tokenizer output types automatically match the ONNX graph.
+
+API
+POST /predict
+
+Predict whether the caller has completed their turn.
+
+Request
+{
+  "context": "What is your MC number?",
+  "text": "yeah it is four one five"
+}
+Response
+{
+  "p_complete": 0.12,
+  "decision": "wait",
+  "threshold": 0.42,
+  "model_latency_ms": 8.7,
+  "request_id": "9b4e7e7c-..."
+}
+
+The values above are illustrative. Do not interpret them as benchmark results.
+
+Health endpoint
+GET /healthz
+
+Used by local development, container orchestration, and load balancers.
+
+Example:
+
+curl http://127.0.0.1:8000/healthz
+
+Expected response:
+
+{
+  "status": "ok"
+}
+Interactive UI
+
+The project includes a browser-based inference interface.
+
+Start the service:
+
+python -m uvicorn serve:app --reload --host 127.0.0.1 --port 8000
+
+Then open:
+
+http://127.0.0.1:8000/
+
+The UI is designed as a lightweight inference laboratory rather than a generic form.
+
+It provides:
+
+Agent context input
+Caller utterance input
+Probability visualization
+Threshold visualization
+SPEAK NOW / KEEP LISTENING decision
+Model latency
+Request ID
+Health status
+Clear/reset controls
+Keyboard shortcut for inference
+Responsive layout
+
+The frontend is intentionally kept separate from the inference implementation:
+
+index.html
+     │
+     ▼
+FastAPI
+     │
+     ▼
+/predict
+Project structure
+fine-tuning-turn-detection-model/
+│
+├── serve.py
+├── common.py
+├── index.html
+├── favicon.svg
+├── requirements.txt
+├── README.md
+├── .gitignore
+│
+├── models/
+│   └── eot-distilbert-onnx-int8/
+│       ├── model.onnx
+│       ├── config.json
+│       ├── tokenizer.json
+│       └── ...
+│
+├── tests/
+│   ├── test_health.py
+│   ├── test_predict.py
+│   └── test_inputs.py
+│
+├── docs/
+│   ├── architecture.md
+│   ├── evaluation.md
+│   └── deployment.md
+│
+└── assets/
+    ├── architecture.png
+    └── screenshots/
+
+Not every directory needs to exist on day one. The structure is intended to keep the repository organized as the project grows.
+
+Local development
+1. Clone
+git clone https://github.com/YOUR_USERNAME/fine-tuning-turn-detection-model.git
+cd fine-tuning-turn-detection-model
+2. Create a virtual environment
+
+Windows PowerShell:
+
+python -m venv .venv
+
+Activate:
+
+.\.venv\Scripts\Activate.ps1
+
+If PowerShell blocks activation:
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Then:
+
+.\.venv\Scripts\Activate.ps1
+3. Install dependencies
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+4. Start the API
+python -m uvicorn serve:app --reload --host 127.0.0.1 --port 8000
+
+Open:
+
+http://127.0.0.1:8000/
+
+API documentation:
+
+http://127.0.0.1:8000/docs
+Configuration
+
+The service supports environment-based configuration.
+
+Variable	Purpose	Default
+EOT_MODEL_DIR	Model directory	models/eot-distilbert-onnx-int8
+EOT_MAX_LEN	Maximum tokenizer length	128
+EOT_THRESHOLD	Override decision threshold	Model threshold
+
+Example:
+
+$env:EOT_THRESHOLD="0.42"
+$env:EOT_MAX_LEN="128"
+
+Then:
+
+python -m uvicorn serve:app --host 127.0.0.1 --port 8000
+API example
+
+PowerShell:
+
+$body = @{
+    context = "What is your MC number?"
+    text = "yeah it is four one five"
+} | ConvertTo-Json
+
+Invoke-RestMethod `
+    -Uri "http://127.0.0.1:8000/predict" `
+    -Method POST `
+    -ContentType "application/json" `
+    -Body $body
+
+Linux/macOS:
+
+curl -X POST http://127.0.0.1:8000/predict \
+  -H "Content-Type: application/json" \
+  -d '{
+    "context": "What is your MC number?",
+    "text": "yeah it is four one five"
+  }'
+Decision policy
+
+The model output is converted into an operational decision.
+
+                 p_complete
+                     │
+                     ▼
+              ┌─────────────┐
+              │  threshold  │
+              └──────┬──────┘
+                     │
+          ┌──────────┴──────────┐
+          │                     │
+      p >= threshold       p < threshold
+          │                     │
+          ▼                     ▼
+        SPEAK                  WAIT
+
+This separation is intentional.
+
+The neural network estimates:
+
+P(completed turn)
+
+The application policy determines:
+
+What should the voice agent do?
+
+Keeping these concerns separate makes threshold tuning and policy changes safer.
+
+Evaluation strategy
+
+A production turn detector should not be evaluated only with accuracy.
+
+Important measurements include:
+
+Precision
+
+How often does the system correctly identify completed turns?
+
+Recall
+
+How many completed turns does the detector recover?
+
+PR-AUC
+
+Useful when the positive and negative classes are not perfectly balanced.
+
+False speak rate
+
+How often does the agent incorrectly interrupt the caller?
+
+This is particularly important for voice applications.
+
+False wait rate
+
+How often does the agent unnecessarily continue listening after the caller has finished?
+
+Latency
+
+The detector must operate within the conversational latency budget.
+
+Evaluation dataset design
+
+The evaluation strategy should contain separate slices.
+
+Training
+   │
+   ├── synthetic / policy-driven examples
+   │
+   └── development examples
+            │
+            ▼
+      Threshold tuning
+            │
+            ▼
+      Frozen evaluation
+            │
+            ▼
+      Held-out real calls
+
+The most important rule is:
+
+Do not tune the threshold on the same examples used to report final performance.
+
+A clean evaluation setup should separate:
+
+TRAIN
+DEV
+FROZEN TEST
+REAL-CALL HOLDOUT
+
+This reduces the risk of reporting an optimistic score.
+
+Threshold selection
+
+The threshold is an operational parameter.
+
+A threshold that is optimal for generic classification accuracy may not be optimal for a voice agent.
+
+For example:
+
+False SPEAK
+    ↓
+Agent interrupts caller
+    ↓
+Poor conversational experience
+
+while:
+
+False WAIT
+    ↓
+Agent waits too long
+    ↓
+Increased response latency
+
+These errors can have different costs.
+
+Therefore threshold selection should consider:
+
+classification performance
++
+false-speak cost
++
+false-wait cost
++
+regression cases
++
+serving-path behavior
+
+The final threshold should be selected against the actual deployed inference artifact.
+
+Calibration and monitoring
+
+Probability scores are not automatically calibrated.
+
+A model returning:
+
+0.80
+
+does not necessarily mean:
+
+80% probability
+
+Therefore production monitoring should track:
+
+probability distribution
+threshold crossings
+false speak rate
+false wait rate
+disagreement with downstream turn-taking
+latency percentiles
+model version
+ASR version
+language distribution
+transcript length distribution
+
+A useful production metric is the disagreement rate between the detector and the incumbent turn-taking system.
+
+ASR
+ │
+ ▼
+Current turn detector ─────┐
+                           │
+                           ▼
+                     disagreement
+                           │
+                           ▼
+                    human review
+                           │
+                           ▼
+                    new evaluation
+                           │
+                           ▼
+                       retraining
+Observability
+
+Every prediction receives a request ID.
+
+Example:
+
+X-Request-ID:
+9b4e7e7c-...
+
+The response also includes:
+
+{
+  "request_id": "9b4e7e7c-..."
+}
+
+This allows an individual prediction to be traced through:
+
+Client
+  ↓
+FastAPI
+  ↓
+Tokenizer
+  ↓
+ONNX Runtime
+  ↓
+Decision
+
+Production logging should capture metadata rather than raw caller content whenever possible.
+
+Security and privacy
+
+Voice-agent transcripts can contain sensitive information.
+
+The service therefore should follow these principles:
+
+Do not log raw caller transcripts by default
+
+Avoid:
+
+INFO caller_text="My SSN is..."
+
+Prefer:
+
+INFO request_id=... latency_ms=... decision=wait
+Do not commit private recordings
+
+Keep:
+
+data/raw/
+data/private/
+data/real_calls/
+
+out of Git.
+
+Do not commit secrets
+
+Keep:
+
+.env
+.env.*
+secrets/
+
+out of Git.
+
+Minimize stored inference data
+
+If prediction logs are required for debugging, use retention limits and redact sensitive information.
+
+Performance
+
+The project is designed for CPU inference.
+
+The serving stack is:
+
+FastAPI
+   ↓
+Tokenizer
+   ↓
+ONNX Runtime
+   ↓
+INT8 DistilBERT
+   ↓
+CPU
+
+Benchmarking should report at least:
+
+Concurrency
+Requests/sec
+p50
+p95
+p99
+Model latency
+End-to-end latency
+CPU utilization
+Memory usage
+
+Example benchmark table:
+
+Concurrency	Throughput	p50	p95	p99
+1	TBD	TBD	TBD	TBD
+4	TBD	TBD	TBD	TBD
+8	TBD	TBD	TBD	TBD
+16	TBD	TBD	TBD	TBD
+
+Replace TBD with measurements from your own benchmark before publishing performance claims.
+
+Why ONNX INT8?
+
+The project uses ONNX Runtime because the deployment target is CPU inference.
+
+Advantages include:
+
+portable inference artifact
+optimized graph execution
+CPU execution
+reduced model size
+INT8 quantization
+predictable serving environment
+separation between training and inference
+
+The production artifact is therefore:
+
+PyTorch / Transformers
+        │
+        ▼
+     ONNX
+        │
+        ▼
+     INT8
+        │
+        ▼
+ ONNX Runtime
+        │
+        ▼
+     FastAPI
+
+The API does not need the full training stack to execute the model.
+
+Failure modes
+
+A senior production system should explicitly identify failure modes.
+
+1. Transcript truncation
+
+Long context may exceed the model's maximum sequence length.
+
+Mitigation:
+
+MAX_LEN
+
+is explicitly configurable.
+
+2. ASR errors
+
+The detector operates on transcripts.
+
+If ASR produces:
+
+"yeah I can make it tomorrow"
+
+instead of:
+
+"yeah I can make it tomorrow but..."
+
+the detector receives incorrect evidence.
+
+This is an input limitation rather than purely a model limitation.
+
+3. Prosody loss
+
+Text-only models cannot directly observe:
+
+pitch
+duration
+pause length
+speaking rate
+final-word lengthening
+intonation
+
+For example, these two transcripts can look identical:
+
+"you need the receipt"
+
+but the audio may distinguish:
+
+statement
+
+from:
+
+question
+
+A future version can combine text and audio features.
+
+4. Domain shift
+
+A model trained on one conversational domain may behave differently on:
+
+customer support
+logistics
+healthcare
+finance
+sales
+multilingual calls
+
+Production evaluation should therefore include domain-specific holdouts.
+
+Future multimodal architecture
+
+The natural evolution of the project is a multimodal end-of-turn detector.
+
+                    Caller Audio
+                         │
+             ┌───────────┴───────────┐
+             │                       │
+             ▼                       ▼
+        ASR Transcript          Audio Features
+             │                       │
+             ▼                       ▼
+       Text Encoder             Audio Encoder
+             │                       │
+             └──────────┬────────────┘
+                        ▼
+                   Fusion Layer
+                        │
+                        ▼
+                 Turn Probability
+                        │
+                        ▼
+                 Policy Threshold
+                   /          \
+               SPEAK          WAIT
+
+Potential audio features:
+
+pause duration
+final syllable duration
+pitch contour
+speaking rate
+energy
+voice activity
+word timing
+
+This addresses one of the fundamental limitations of text-only end-of-turn detection.
+
+Production deployment
+
+A production deployment can evolve into:
+
+                    Load Balancer
+                         │
+                         ▼
+                  FastAPI Service
+                         │
+                ┌────────┴────────┐
+                ▼                 ▼
+           ONNX Runtime       Metrics
+                │                 │
+                ▼                 ▼
+            CPU Nodes       Prometheus
+                                  │
+                                  ▼
+                              Grafana
+
+Containerized deployment:
+
+Docker
+  │
+  ▼
+FastAPI
+  │
+  ▼
+ONNX Runtime
+  │
+  ▼
+INT8 model
+
+For larger deployments:
+
+Kubernetes
+    │
+    ├── API pods
+    ├── autoscaling
+    ├── health probes
+    ├── rolling deployments
+    └── model versioning
+Model versioning
+
+Every production model should have an explicit version.
+
+Example:
+
+models/
+└── eot-distilbert-onnx-int8/
+    ├── model.onnx
+    ├── config.json
+    ├── tokenizer.json
+    ├── threshold.json
+    └── metadata.json
+
+Recommended metadata:
+
+{
+  "model_name": "eot-distilbert",
+  "format": "onnx",
+  "quantization": "int8",
+  "max_length": 128,
+  "threshold": null,
+  "created_at": null,
+  "dataset_version": null
+}
+
+Populate these fields with real values before publishing.
+
+Testing strategy
+
+The project should maintain tests at multiple levels.
+
+Unit tests
+
+Test:
+
+request validation
+probability calculation
+threshold behavior
+tensor dtype conversion
+configuration loading
+API tests
+
+Test:
+
+POST /predict
+GET /healthz
+GET /
+Model contract tests
+
+Verify:
+
+model exists
+tokenizer loads
+ONNX inputs match tokenizer
+ONNX outputs exist
+Regression tests
+
+Maintain a small set of conversational examples representing known failure modes.
+
+For example:
+
+"Actually, one more thing..."
+"Hang on, let me check..."
+"Yeah, I can make it tomorrow."
+"Can you send that again?"
+
+Every model update should run these before deployment.
+
+CI/CD direction
+
+A production CI pipeline should look like:
+
+Pull Request
+     │
+     ▼
+Lint
+     │
+     ▼
+Unit Tests
+     │
+     ▼
+API Tests
+     │
+     ▼
+Model Contract Test
+     │
+     ▼
+Regression Tests
+     │
+     ▼
+Benchmark
+     │
+     ▼
+Docker Build
+     │
+     ▼
+Security Scan
+     │
+     ▼
+Deploy
+
+The important principle is:
+
+A model change should be treated as a software release, not only as an experiment.
+
+Reproducibility
+
+A model result is only useful if another engineer can reproduce the environment.
+
+Pin:
+
+Python version
+dependencies
+model artifact
+tokenizer
+threshold
+dataset version
+evaluation configuration
+
+Recommended environment:
+
+Python 3.9.x
+
+The project currently targets Python 3.9 compatibility.
+
+Development commands
+
+Start the server:
+
+python -m uvicorn serve:app --reload --host 127.0.0.1 --port 8000
+
+Run without reload:
+
+python -m uvicorn serve:app --host 0.0.0.0 --port 8000
+
+Check the API:
+
+curl http://127.0.0.1:8000/healthz
+
+Open Swagger:
+
+http://127.0.0.1:8000/docs
+
+Open the application:
+
+http://127.0.0.1:8000/
+Known limitations
+
+This version is intentionally text-only.
+
+Current limitations include:
+
+No direct audio/prosody input
+ASR errors propagate into the detector
+Threshold requires evaluation against representative data
+Model quality depends on training/evaluation data
+Multilingual performance requires dedicated evaluation
+CPU benchmark numbers are hardware dependent
+Production drift monitoring is not yet included
+No automatic model registry integration yet
+
+These are engineering constraints, not hidden assumptions.
+
 Roadmap
-Prosody is the acknowledged gap. The next iteration is expected to bring in an audio signal alongside text — three transcriber-route options are under evaluation; see docs/approach.md for the current state of that comparison.
+Phase 1 — Current
+ DistilBERT classifier
+ ONNX export
+ INT8 CPU inference
+ FastAPI service
+ Health endpoint
+ Request IDs
+ Browser inference UI
+ Configurable threshold
+ ONNX input dtype handling
+Phase 2 — Evaluation
+ Frozen evaluation dataset
+ Precision / recall
+ PR-AUC
+ Calibration analysis
+ False-speak analysis
+ False-wait analysis
+ Threshold sweep
+ Regression suite
+Phase 3 — Production
+ Docker image
+ CI/CD
+ Prometheus metrics
+ Grafana dashboard
+ Load testing
+ Model versioning
+ Automated regression checks
+Phase 4 — Multimodal
+ Word timings
+ Pause features
+ Prosody features
+ Audio encoder
+ Text/audio fusion
+ Streaming inference
+What this project demonstrates
+
+This project is intentionally more than:
+
+train model → save model → call predict()
+
+It demonstrates the complete ML engineering path:
+
+Problem definition
+       ↓
+Conversation policy
+       ↓
+Dataset design
+       ↓
+Model fine-tuning
+       ↓
+Model export
+       ↓
+Quantization
+       ↓
+Inference contract
+       ↓
+FastAPI serving
+       ↓
+Threshold selection
+       ↓
+Evaluation
+       ↓
+Regression testing
+       ↓
+Observability
+       ↓
+Deployment
+
+The key engineering lesson is:
+
+The model is only one component of a production ML system.
+
+The difficult part is making the model's behavior measurable, reproducible, observable, and safe enough to operate inside a real-time conversational system.
+
+Research questions
+
+This project can be extended around several practical research questions:
+
+How much does agent context improve end-of-turn detection?
+How much performance is lost through INT8 quantization?
+How sensitive is the operating threshold to domain shift?
+How does ASR punctuation affect classification?
+Can word timing features improve text-only detection?
+Can audio prosody resolve ambiguous transcript cases?
+How should false-speak and false-wait costs be optimized?
+Can disagreement mining provide an efficient human-labeling strategy?
+How does performance change across languages?
+Can the detector operate reliably in streaming conditions?
+Engineering principles
+Measure the artifact that ships
+
+Do not evaluate FP32 and deploy INT8 without checking the difference.
+
+Separate probability from policy
+
+The model estimates a probability.
+
+The application decides what action to take.
+
+Keep evaluation frozen
+
+Do not continuously modify the test set until the metrics look good.
+
+Treat regressions as first-class data
+
+Every discovered failure should have a path into the regression suite.
+
+Optimize the complete system
+
+A fast model is not enough if:
+
+tokenization
++
+network
++
+queueing
++
+inference
++
+serialization
+
+still violates the latency budget.
+
+Make failure visible
+
+Production systems should expose:
+
+request ID
+model version
+latency
+decision
+threshold
+health
+
+rather than silently failing.
+
+License
+
+This project is intended to be released under the Apache-2.0 license.
+
+Add the license file to the repository before publishing:
+
+LICENSE
+Author
+
+Harishchandra Chaudhary
+
+Software Engineer | Python | FastAPI | React | Machine Learning | AI Engineering
+
+GitHub:
+
+https://github.com/HarishchandraChaudhary
+
+LinkedIn:
+
+https://www.linkedin.com/in/harishchaudhary-dev/
+
+Topics
+python
+machine-learning
+deep-learning
+nlp
+transformers
+distilbert
+onnx
+onnxruntime
+int8
+quantization
+fastapi
+voice-ai
+conversational-ai
+end-of-turn-detection
+mlops
+model-serving
+Status
+
+This repository is an engineering project focused on production-oriented end-of-turn detection for voice-agent systems.
+
+The benchmark numbers in this README should be populated only from reproducible measurements of the current model artifact and serving environment.
